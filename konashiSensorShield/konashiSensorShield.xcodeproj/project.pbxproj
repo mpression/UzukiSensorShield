@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01024F1918E4EF4B00F2B416 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01024F1818E4EF4B00F2B416 /* Foundation.framework */; };
+		01024F1B18E4EF4B00F2B416 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01024F1A18E4EF4B00F2B416 /* CoreGraphics.framework */; };
+		01024F1D18E4EF4B00F2B416 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01024F1C18E4EF4B00F2B416 /* UIKit.framework */; };
+		01024F2318E4EF4B00F2B416 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 01024F2118E4EF4B00F2B416 /* InfoPlist.strings */; };
+		01024F2518E4EF4B00F2B416 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01024F2418E4EF4B00F2B416 /* main.m */; };
+		01024F2918E4EF4B00F2B416 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01024F2818E4EF4B00F2B416 /* AppDelegate.m */; };
+		01024F2C18E4EF4B00F2B416 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01024F2A18E4EF4B00F2B416 /* Main.storyboard */; };
+		01024F2F18E4EF4B00F2B416 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01024F2E18E4EF4B00F2B416 /* FirstViewController.m */; };
+		01024F3218E4EF4B00F2B416 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01024F3118E4EF4B00F2B416 /* SecondViewController.m */; };
+		01024F3418E4EF4B00F2B416 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01024F3318E4EF4B00F2B416 /* Images.xcassets */; };
+		01024F3B18E4EF4B00F2B416 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01024F3A18E4EF4B00F2B416 /* XCTest.framework */; };
+		01024F3C18E4EF4B00F2B416 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01024F1818E4EF4B00F2B416 /* Foundation.framework */; };
+		01024F3D18E4EF4B00F2B416 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01024F1C18E4EF4B00F2B416 /* UIKit.framework */; };
+		01024F4518E4EF4B00F2B416 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 01024F4318E4EF4B00F2B416 /* InfoPlist.strings */; };
+		01024F4718E4EF4B00F2B416 /* konashiSensorShieldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 01024F4618E4EF4B00F2B416 /* konashiSensorShieldTests.m */; };
+		01024F5118E4EF5800F2B416 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01024F5018E4EF5800F2B416 /* CoreBluetooth.framework */; };
+		01024F5318E4EF6900F2B416 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01024F5218E4EF6900F2B416 /* QuartzCore.framework */; };
+		01024F6018E4F86800F2B416 /* SiLabsLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 01024F5F18E4F86800F2B416 /* SiLabsLogo.png */; };
+		01024F6518E5B5E700F2B416 /* Konashi.m in Sources */ = {isa = PBXBuildFile; fileRef = 01024F6318E5B5E700F2B416 /* Konashi.m */; };
+		01024F6A18E5B98C00F2B416 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 01024F6718E5B98C00F2B416 /* SVProgressHUD.bundle */; };
+		01024F6B18E5B98C00F2B416 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 01024F6918E5B98C00F2B416 /* SVProgressHUD.m */; };
+		01024F6F18E66BB700F2B416 /* Mpression-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 01024F6E18E66BB700F2B416 /* Mpression-small.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		01024F3E18E4EF4B00F2B416 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01024F0D18E4EF4B00F2B416 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01024F1418E4EF4B00F2B416;
+			remoteInfo = konashiSensorShield;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01024F1518E4EF4B00F2B416 /* konashiSensorShield.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = konashiSensorShield.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		01024F1818E4EF4B00F2B416 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		01024F1A18E4EF4B00F2B416 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		01024F1C18E4EF4B00F2B416 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		01024F2018E4EF4B00F2B416 /* konashiSensorShield-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "konashiSensorShield-Info.plist"; sourceTree = "<group>"; };
+		01024F2218E4EF4B00F2B416 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		01024F2418E4EF4B00F2B416 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		01024F2618E4EF4B00F2B416 /* konashiSensorShield-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "konashiSensorShield-Prefix.pch"; sourceTree = "<group>"; };
+		01024F2718E4EF4B00F2B416 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		01024F2818E4EF4B00F2B416 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		01024F2B18E4EF4B00F2B416 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		01024F2D18E4EF4B00F2B416 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		01024F2E18E4EF4B00F2B416 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		01024F3018E4EF4B00F2B416 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		01024F3118E4EF4B00F2B416 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		01024F3318E4EF4B00F2B416 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		01024F3918E4EF4B00F2B416 /* konashiSensorShieldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = konashiSensorShieldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		01024F3A18E4EF4B00F2B416 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		01024F4218E4EF4B00F2B416 /* konashiSensorShieldTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "konashiSensorShieldTests-Info.plist"; sourceTree = "<group>"; };
+		01024F4418E4EF4B00F2B416 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		01024F4618E4EF4B00F2B416 /* konashiSensorShieldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = konashiSensorShieldTests.m; sourceTree = "<group>"; };
+		01024F5018E4EF5800F2B416 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		01024F5218E4EF6900F2B416 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		01024F5F18E4F86800F2B416 /* SiLabsLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SiLabsLogo.png; sourceTree = "<group>"; };
+		01024F6218E5B5E700F2B416 /* Konashi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Konashi.h; sourceTree = "<group>"; };
+		01024F6318E5B5E700F2B416 /* Konashi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Konashi.m; sourceTree = "<group>"; };
+		01024F6418E5B5E700F2B416 /* KonashiDb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KonashiDb.h; sourceTree = "<group>"; };
+		01024F6718E5B98C00F2B416 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		01024F6818E5B98C00F2B416 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		01024F6918E5B98C00F2B416 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		01024F6E18E66BB700F2B416 /* Mpression-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mpression-small.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01024F1218E4EF4B00F2B416 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01024F5318E4EF6900F2B416 /* QuartzCore.framework in Frameworks */,
+				01024F5118E4EF5800F2B416 /* CoreBluetooth.framework in Frameworks */,
+				01024F1B18E4EF4B00F2B416 /* CoreGraphics.framework in Frameworks */,
+				01024F1D18E4EF4B00F2B416 /* UIKit.framework in Frameworks */,
+				01024F1918E4EF4B00F2B416 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01024F3618E4EF4B00F2B416 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01024F3B18E4EF4B00F2B416 /* XCTest.framework in Frameworks */,
+				01024F3D18E4EF4B00F2B416 /* UIKit.framework in Frameworks */,
+				01024F3C18E4EF4B00F2B416 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01024F0C18E4EF4B00F2B416 = {
+			isa = PBXGroup;
+			children = (
+				01024F6E18E66BB700F2B416 /* Mpression-small.png */,
+				01024F5F18E4F86800F2B416 /* SiLabsLogo.png */,
+				01024F6118E5B5E700F2B416 /* Konashi */,
+				01024F1E18E4EF4B00F2B416 /* konashiSensorShield */,
+				01024F4018E4EF4B00F2B416 /* konashiSensorShieldTests */,
+				01024F1718E4EF4B00F2B416 /* Frameworks */,
+				01024F1618E4EF4B00F2B416 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		01024F1618E4EF4B00F2B416 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01024F1518E4EF4B00F2B416 /* konashiSensorShield.app */,
+				01024F3918E4EF4B00F2B416 /* konashiSensorShieldTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01024F1718E4EF4B00F2B416 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01024F5218E4EF6900F2B416 /* QuartzCore.framework */,
+				01024F5018E4EF5800F2B416 /* CoreBluetooth.framework */,
+				01024F1818E4EF4B00F2B416 /* Foundation.framework */,
+				01024F1A18E4EF4B00F2B416 /* CoreGraphics.framework */,
+				01024F1C18E4EF4B00F2B416 /* UIKit.framework */,
+				01024F3A18E4EF4B00F2B416 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		01024F1E18E4EF4B00F2B416 /* konashiSensorShield */ = {
+			isa = PBXGroup;
+			children = (
+				01024F2718E4EF4B00F2B416 /* AppDelegate.h */,
+				01024F2818E4EF4B00F2B416 /* AppDelegate.m */,
+				01024F2A18E4EF4B00F2B416 /* Main.storyboard */,
+				01024F2D18E4EF4B00F2B416 /* FirstViewController.h */,
+				01024F2E18E4EF4B00F2B416 /* FirstViewController.m */,
+				01024F3018E4EF4B00F2B416 /* SecondViewController.h */,
+				01024F3118E4EF4B00F2B416 /* SecondViewController.m */,
+				01024F3318E4EF4B00F2B416 /* Images.xcassets */,
+				01024F1F18E4EF4B00F2B416 /* Supporting Files */,
+			);
+			path = konashiSensorShield;
+			sourceTree = "<group>";
+		};
+		01024F1F18E4EF4B00F2B416 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				01024F2018E4EF4B00F2B416 /* konashiSensorShield-Info.plist */,
+				01024F2118E4EF4B00F2B416 /* InfoPlist.strings */,
+				01024F2418E4EF4B00F2B416 /* main.m */,
+				01024F2618E4EF4B00F2B416 /* konashiSensorShield-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		01024F4018E4EF4B00F2B416 /* konashiSensorShieldTests */ = {
+			isa = PBXGroup;
+			children = (
+				01024F4618E4EF4B00F2B416 /* konashiSensorShieldTests.m */,
+				01024F4118E4EF4B00F2B416 /* Supporting Files */,
+			);
+			path = konashiSensorShieldTests;
+			sourceTree = "<group>";
+		};
+		01024F4118E4EF4B00F2B416 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				01024F4218E4EF4B00F2B416 /* konashiSensorShieldTests-Info.plist */,
+				01024F4318E4EF4B00F2B416 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		01024F6118E5B5E700F2B416 /* Konashi */ = {
+			isa = PBXGroup;
+			children = (
+				01024F6218E5B5E700F2B416 /* Konashi.h */,
+				01024F6318E5B5E700F2B416 /* Konashi.m */,
+				01024F6618E5B98C00F2B416 /* SVProgressHUD */,
+				01024F6418E5B5E700F2B416 /* KonashiDb.h */,
+			);
+			path = Konashi;
+			sourceTree = "<group>";
+		};
+		01024F6618E5B98C00F2B416 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				01024F6718E5B98C00F2B416 /* SVProgressHUD.bundle */,
+				01024F6818E5B98C00F2B416 /* SVProgressHUD.h */,
+				01024F6918E5B98C00F2B416 /* SVProgressHUD.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01024F1418E4EF4B00F2B416 /* konashiSensorShield */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01024F4A18E4EF4B00F2B416 /* Build configuration list for PBXNativeTarget "konashiSensorShield" */;
+			buildPhases = (
+				01024F1118E4EF4B00F2B416 /* Sources */,
+				01024F1218E4EF4B00F2B416 /* Frameworks */,
+				01024F1318E4EF4B00F2B416 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = konashiSensorShield;
+			productName = konashiSensorShield;
+			productReference = 01024F1518E4EF4B00F2B416 /* konashiSensorShield.app */;
+			productType = "com.apple.product-type.application";
+		};
+		01024F3818E4EF4B00F2B416 /* konashiSensorShieldTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01024F4D18E4EF4B00F2B416 /* Build configuration list for PBXNativeTarget "konashiSensorShieldTests" */;
+			buildPhases = (
+				01024F3518E4EF4B00F2B416 /* Sources */,
+				01024F3618E4EF4B00F2B416 /* Frameworks */,
+				01024F3718E4EF4B00F2B416 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01024F3F18E4EF4B00F2B416 /* PBXTargetDependency */,
+			);
+			name = konashiSensorShieldTests;
+			productName = konashiSensorShieldTests;
+			productReference = 01024F3918E4EF4B00F2B416 /* konashiSensorShieldTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01024F0D18E4EF4B00F2B416 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Macnica;
+				TargetAttributes = {
+					01024F1418E4EF4B00F2B416 = {
+						DevelopmentTeam = XLNDPW956F;
+					};
+					01024F3818E4EF4B00F2B416 = {
+						TestTargetID = 01024F1418E4EF4B00F2B416;
+					};
+				};
+			};
+			buildConfigurationList = 01024F1018E4EF4B00F2B416 /* Build configuration list for PBXProject "konashiSensorShield" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 01024F0C18E4EF4B00F2B416;
+			productRefGroup = 01024F1618E4EF4B00F2B416 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01024F1418E4EF4B00F2B416 /* konashiSensorShield */,
+				01024F3818E4EF4B00F2B416 /* konashiSensorShieldTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		01024F1318E4EF4B00F2B416 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01024F6A18E5B98C00F2B416 /* SVProgressHUD.bundle in Resources */,
+				01024F6018E4F86800F2B416 /* SiLabsLogo.png in Resources */,
+				01024F3418E4EF4B00F2B416 /* Images.xcassets in Resources */,
+				01024F6F18E66BB700F2B416 /* Mpression-small.png in Resources */,
+				01024F2318E4EF4B00F2B416 /* InfoPlist.strings in Resources */,
+				01024F2C18E4EF4B00F2B416 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01024F3718E4EF4B00F2B416 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01024F4518E4EF4B00F2B416 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01024F1118E4EF4B00F2B416 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01024F3218E4EF4B00F2B416 /* SecondViewController.m in Sources */,
+				01024F2918E4EF4B00F2B416 /* AppDelegate.m in Sources */,
+				01024F2F18E4EF4B00F2B416 /* FirstViewController.m in Sources */,
+				01024F2518E4EF4B00F2B416 /* main.m in Sources */,
+				01024F6518E5B5E700F2B416 /* Konashi.m in Sources */,
+				01024F6B18E5B98C00F2B416 /* SVProgressHUD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01024F3518E4EF4B00F2B416 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01024F4718E4EF4B00F2B416 /* konashiSensorShieldTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		01024F3F18E4EF4B00F2B416 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01024F1418E4EF4B00F2B416 /* konashiSensorShield */;
+			targetProxy = 01024F3E18E4EF4B00F2B416 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		01024F2118E4EF4B00F2B416 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01024F2218E4EF4B00F2B416 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		01024F2A18E4EF4B00F2B416 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01024F2B18E4EF4B00F2B416 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		01024F4318E4EF4B00F2B416 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01024F4418E4EF4B00F2B416 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		01024F4818E4EF4B00F2B416 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		01024F4918E4EF4B00F2B416 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		01024F4B18E4EF4B00F2B416 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "konashiSensorShield/konashiSensorShield-Prefix.pch";
+				INFOPLIST_FILE = "konashiSensorShield/konashiSensorShield-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		01024F4C18E4EF4B00F2B416 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "konashiSensorShield/konashiSensorShield-Prefix.pch";
+				INFOPLIST_FILE = "konashiSensorShield/konashiSensorShield-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		01024F4E18E4EF4B00F2B416 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/konashiSensorShield.app/konashiSensorShield";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "konashiSensorShield/konashiSensorShield-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "konashiSensorShieldTests/konashiSensorShieldTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		01024F4F18E4EF4B00F2B416 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/konashiSensorShield.app/konashiSensorShield";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "konashiSensorShield/konashiSensorShield-Prefix.pch";
+				INFOPLIST_FILE = "konashiSensorShieldTests/konashiSensorShieldTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01024F1018E4EF4B00F2B416 /* Build configuration list for PBXProject "konashiSensorShield" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01024F4818E4EF4B00F2B416 /* Debug */,
+				01024F4918E4EF4B00F2B416 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01024F4A18E4EF4B00F2B416 /* Build configuration list for PBXNativeTarget "konashiSensorShield" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01024F4B18E4EF4B00F2B416 /* Debug */,
+				01024F4C18E4EF4B00F2B416 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		01024F4D18E4EF4B00F2B416 /* Build configuration list for PBXNativeTarget "konashiSensorShieldTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01024F4E18E4EF4B00F2B416 /* Debug */,
+				01024F4F18E4EF4B00F2B416 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 01024F0D18E4EF4B00F2B416 /* Project object */;
+}

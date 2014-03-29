@@ -1,18 +1,18 @@
 //
-//  DataViewController.m
+//  SecondViewController.m
 //  konashiSensorShield
 //
 //  Created by Kenji Ohno on 2014/03/28.
 //  Copyright (c) 2014年 Macnica. All rights reserved.
 //
 
-#import "DataViewController.h"
+#import "SecondViewController.h"
 
-@interface DataViewController ()
+@interface SecondViewController ()
 
 @end
 
-@implementation DataViewController
+@implementation SecondViewController
 
 - (void)viewDidLoad
 {
@@ -24,12 +24,6 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    self.dataLabel.text = [self.dataObject description];
 }
 
 @end
