@@ -14,7 +14,6 @@
 #define I2C_GLOBAL_ADDRESS              0x00
 #define I2C_GLOBAL_RESET_CMD            0x06
 #define HUMID_TEMP_SENSOR_ADDRESS       0x40 //Si7013
-#define PROX_LIGHT_UV_SENSOR_ADDRESS    0x60 //Si1045
 
 @interface FirstViewController : UIViewController
 

@@ -73,6 +73,7 @@
 		01024F6818E5B98C00F2B416 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
 		01024F6918E5B98C00F2B416 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 		01024F6E18E66BB700F2B416 /* Mpression-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mpression-small.png"; sourceTree = "<group>"; };
+		01AF611A18E6B91700DF534D /* si114x_defs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = si114x_defs.h; path = konashiSensorShield/si114x_defs.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +107,7 @@
 			children = (
 				01024F6E18E66BB700F2B416 /* Mpression-small.png */,
 				01024F5F18E4F86800F2B416 /* SiLabsLogo.png */,
+				01AF611A18E6B91700DF534D /* si114x_defs.h */,
 				01024F6118E5B5E700F2B416 /* Konashi */,
 				01024F1E18E4EF4B00F2B416 /* konashiSensorShield */,
 				01024F4018E4EF4B00F2B416 /* konashiSensorShieldTests */,
@@ -521,6 +523,7 @@
 				01024F4C18E4EF4B00F2B416 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		01024F4D18E4EF4B00F2B416 /* Build configuration list for PBXNativeTarget "konashiSensorShieldTests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +532,7 @@
 				01024F4F18E4EF4B00F2B416 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
