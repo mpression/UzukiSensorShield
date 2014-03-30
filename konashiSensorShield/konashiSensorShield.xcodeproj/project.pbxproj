@@ -29,6 +29,7 @@
 		01024F6A18E5B98C00F2B416 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 01024F6718E5B98C00F2B416 /* SVProgressHUD.bundle */; };
 		01024F6B18E5B98C00F2B416 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 01024F6918E5B98C00F2B416 /* SVProgressHUD.m */; };
 		01024F6F18E66BB700F2B416 /* Mpression-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 01024F6E18E66BB700F2B416 /* Mpression-small.png */; };
+		01894E4F18E7724700E72836 /* header_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 01894E4E18E7724700E72836 /* header_logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		01024F6818E5B98C00F2B416 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
 		01024F6918E5B98C00F2B416 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 		01024F6E18E66BB700F2B416 /* Mpression-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mpression-small.png"; sourceTree = "<group>"; };
+		01894E4E18E7724700E72836 /* header_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = header_logo.png; sourceTree = "<group>"; };
 		01AF611A18E6B91700DF534D /* si114x_defs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = si114x_defs.h; path = konashiSensorShield/si114x_defs.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,6 +107,7 @@
 		01024F0C18E4EF4B00F2B416 = {
 			isa = PBXGroup;
 			children = (
+				01894E4E18E7724700E72836 /* header_logo.png */,
 				01024F6E18E66BB700F2B416 /* Mpression-small.png */,
 				01024F5F18E4F86800F2B416 /* SiLabsLogo.png */,
 				01AF611A18E6B91700DF534D /* si114x_defs.h */,
@@ -188,8 +191,8 @@
 			children = (
 				01024F6218E5B5E700F2B416 /* Konashi.h */,
 				01024F6318E5B5E700F2B416 /* Konashi.m */,
-				01024F6618E5B98C00F2B416 /* SVProgressHUD */,
 				01024F6418E5B5E700F2B416 /* KonashiDb.h */,
+				01024F6618E5B98C00F2B416 /* SVProgressHUD */,
 			);
 			path = Konashi;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 				01024F3418E4EF4B00F2B416 /* Images.xcassets in Resources */,
 				01024F6F18E66BB700F2B416 /* Mpression-small.png in Resources */,
 				01024F2318E4EF4B00F2B416 /* InfoPlist.strings in Resources */,
+				01894E4F18E7724700E72836 /* header_logo.png in Resources */,
 				01024F2C18E4EF4B00F2B416 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

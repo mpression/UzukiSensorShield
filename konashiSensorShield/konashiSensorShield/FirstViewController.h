@@ -16,9 +16,13 @@
 #define HUMID_TEMP_SENSOR_ADDRESS       0x40 //Si7013
 
 @interface FirstViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *dciTitle;
+@property (weak, nonatomic) IBOutlet UILabel *tempUnit;
+@property (weak, nonatomic) IBOutlet UILabel *rhUnit;
 
 @property (weak, nonatomic) IBOutlet UILabel *rhLabel;
 @property (weak, nonatomic) IBOutlet UILabel *tempLabel;
+@property (weak, nonatomic) IBOutlet UILabel *dciLabel;
 @property (weak, nonatomic) IBOutlet UIButton *devicePairingButton;
 - (IBAction)tapDevicePairing:(id)sender;
 

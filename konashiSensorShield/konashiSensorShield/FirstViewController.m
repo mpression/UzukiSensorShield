@@ -19,6 +19,11 @@ NSTimer *checkSensorTimer;
 bool    count;
 int     konashiSuccess;
 
+double rh;
+double temp;
+double dcindex;
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -131,7 +136,7 @@ int     konashiSuccess;
         
         // Sequence to Start a Relative Humidity Conversion
         [Konashi i2cStartCondition];
-        [NSThread sleepForTimeInterval:0.01];
+        [NSThread sleepForTimeInterval:0.1];
         data[0] = 0xE5;
         konashiSuccess = [Konashi i2cWrite:1 data:data address:HUMID_TEMP_SENSOR_ADDRESS];
         if (konashiSuccess) [Konashi reset];
@@ -175,7 +180,7 @@ int     konashiSuccess;
         
         NSLog(@"RH:%X,%X", data[0], data[1]);
         
-        double rh = (double) ((unsigned short)(data[0] << 8 ^ data[1])) * 125.0 / 65536.0 - 6.0;
+        rh = (double) ((unsigned short)(data[0] << 8 ^ data[1])) * 125.0 / 65536.0 - 6.0;
         
         _rhLabel.text = [NSString stringWithFormat:@"%.1f", rh];
         
@@ -183,6 +188,7 @@ int     konashiSuccess;
         NSLog(@" ");
         //_silabsLogo.hidden = NO;
         _rhLabel.hidden = NO;
+        _rhUnit.hidden = NO;
     }
     
     else{ // Read Temp.
@@ -195,14 +201,54 @@ int     konashiSuccess;
         
         NSLog(@"Temp:%X,%X", data[0], data[1]);
         
-        double temp = (double) ((unsigned short)(data[0] << 8 ^ data[1])) * 175.72 / 65536.0 - 46.85;
+        temp = (double) ((unsigned short)(data[0] << 8 ^ data[1])) * 175.72 / 65536.0 - 46.85;
         
+        _tempUnit.hidden = NO;
         _tempLabel.text = [NSString stringWithFormat:@"%.1f", temp];
         
         NSLog(@"Temp:%f", temp);
         NSLog(@" ");
         //_silabsLogo.hidden = YES;
         _tempLabel.hidden = NO;
+        
+        // 不快指数(Discomfort Index)の計算
+        // 0.81T+0.01RH(0.99T-14.3)+46.3
+        int dcindex = 0.81 * temp + 0.01 * rh * ( 0.99 * temp - 14.3 ) + 46.3;
+        _dciLabel.text = [NSString stringWithFormat:@"%d", dcindex];
+        _dciTitle.hidden = NO;
+        
+        if (dcindex<55){ // 寒い
+            _dciLabel.textColor = [UIColor cyanColor];
+            _dciTitle.textColor = [UIColor cyanColor];
+        }
+        else if(dcindex>=55 && dcindex<60){ // 肌寒い
+            _dciLabel.textColor = [UIColor blueColor];
+            _dciTitle.textColor = [UIColor blueColor];
+        }
+        else if(dcindex>=60 && dcindex<65) { // 何も感じない
+            _dciLabel.textColor = [UIColor greenColor];
+            _dciTitle.textColor = [UIColor greenColor];
+        }
+        else if (dcindex>=65 && dcindex<70) { // 快い
+            _dciLabel.textColor = [UIColor greenColor];
+            _dciTitle.textColor = [UIColor greenColor];
+        }
+        else if (dcindex>=70 && dcindex<75) { // 暑くない
+            _dciLabel.textColor = [UIColor yellowColor];
+            _dciTitle.textColor = [UIColor yellowColor];
+        }
+        else if (dcindex>=75 && dcindex<80) { // やや暑い
+            _dciLabel.textColor = [UIColor orangeColor];
+            _dciTitle.textColor = [UIColor orangeColor];
+        }
+        else if (dcindex>=80 && dcindex<85) { // 暑くて汗がでる
+            _dciLabel.textColor = [UIColor redColor];
+            _dciTitle.textColor = [UIColor redColor];
+        }
+        else{ // 暑くてたまらない
+            _dciLabel.textColor = [UIColor purpleColor];
+            _dciTitle.textColor = [UIColor purpleColor];
+        }
     }
 }
 @end

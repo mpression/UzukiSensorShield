@@ -24,6 +24,7 @@
 
 #define REG_PARAM_WR                    0x17
 #define REG_COMMAND                     0x18
+#define REG_PARAM_RD                    0x2E
 
 #define REG_COEF0                       0x13
 #define REG_COEF1                       0x14
@@ -38,6 +39,7 @@
 #define PARAM_CH_LIST                   0x01
 
 #define EN_UV                           0x40
+#define DIS_UV                          0x00
 
 #define REG_AUX_DATA0                   0x2C
 #define REG_AUX_DATA1                   0x2D
