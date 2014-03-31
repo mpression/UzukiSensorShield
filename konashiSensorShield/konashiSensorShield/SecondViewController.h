@@ -47,6 +47,12 @@
 #define REG_UVI_DATA0                   0x2C
 #define REG_UVI_DATA1                   0x2D
 
+#define PS_FORCE_VALUE                  0x05
+#define ALS_FORCE_VALUE                 0x06
+#define PSALS_FORCE_VALUE               0x07
+
+
+
 
 
 

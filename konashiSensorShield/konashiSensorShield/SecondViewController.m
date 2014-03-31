@@ -290,12 +290,22 @@ int     konashiSuccess;
     konashiSuccess = [Konashi i2cStopCondition];
     if (konashiSuccess) [Konashi reset];
     [NSThread sleepForTimeInterval:0.1];
+
+    [Konashi i2cStartCondition];
+    [NSThread sleepForTimeInterval:0.1];
+    data[0] = REG_COMMAND;
+    data[1] = ALS_FORCE_VALUE; // Enter PS Mode cmd.
+    konashiSuccess = [Konashi i2cWrite:2 data:data address:PROX_LIGHT_UV_SENSOR_ADDRESS];
+    if (konashiSuccess) [Konashi reset];
+    [NSThread sleepForTimeInterval:0.1];
+    konashiSuccess = [Konashi i2cStopCondition];
+    if (konashiSuccess) [Konashi reset];
+    [NSThread sleepForTimeInterval:0.1];
     
     [Konashi i2cStartCondition];
     [NSThread sleepForTimeInterval:0.1];
     data[0] = REG_UVI_DATA0;
-    data[1] = REG_UVI_DATA1;
-    konashiSuccess = [Konashi i2cWrite:2 data:data address:PROX_LIGHT_UV_SENSOR_ADDRESS];
+    konashiSuccess = [Konashi i2cWrite:1 data:data address:PROX_LIGHT_UV_SENSOR_ADDRESS];
     if (konashiSuccess) [Konashi reset];
     [NSThread sleepForTimeInterval:0.1];
     konashiSuccess = [Konashi i2cRestartCondition];
@@ -315,13 +325,13 @@ int     konashiSuccess;
     [NSThread sleepForTimeInterval:0.1];
     //[NSThread sleepForTimeInterval:0.01];
         
-    NSLog(@"UVI_HL:%X,%X", data[0], data[1]);
+    NSLog(@"UVI_HL:%X,%X", data[1], data[0]);
         
-    double uvi = (double) ((unsigned short)(data[1] << 8 | data[0])) / 100;
+    int uvi = (int) ( (double) ((unsigned short)(data[1] << 8 | data[0])) / 100.0);
         
-    _uviLabel.text = [NSString stringWithFormat:@"%.1f", uvi];
+    _uviLabel.text = [NSString stringWithFormat:@"%d", uvi];
         
-    NSLog(@"UVI: %f", uvi);
+    NSLog(@"UVI: %d", uvi);
     NSLog(@" ");
     //_silabsLogo.hidden = NO;
     _uviLabel.hidden = NO;
