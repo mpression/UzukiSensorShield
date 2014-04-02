@@ -136,33 +136,39 @@ double dcindex;
         
         // Sequence to Start a Relative Humidity Conversion
         [Konashi i2cStartCondition];
-        [NSThread sleepForTimeInterval:0.1];
+        [NSThread sleepForTimeInterval:I2C_WAIT_INTERVAL];
         data[0] = 0xE5;
         konashiSuccess = [Konashi i2cWrite:1 data:data address:HUMID_TEMP_SENSOR_ADDRESS];
+        NSLog(@"Konashi %d", konashiSuccess);
         if (konashiSuccess) [Konashi reset];
-        [NSThread sleepForTimeInterval:0.1];
+        [NSThread sleepForTimeInterval:I2C_WAIT_INTERVAL];
         konashiSuccess = [Konashi i2cRestartCondition];
+        NSLog(@"Konashi %d", konashiSuccess);
         if (konashiSuccess) [Konashi reset];
-        [NSThread sleepForTimeInterval:0.1];
+        [NSThread sleepForTimeInterval:I2C_WAIT_INTERVAL];
         konashiSuccess = [Konashi i2cReadRequest:3 address:HUMID_TEMP_SENSOR_ADDRESS];
+        NSLog(@"Konashi %d", konashiSuccess);
         if (konashiSuccess) [Konashi reset];
-        [NSThread sleepForTimeInterval:0.5];
+        [NSThread sleepForTimeInterval:I2C_WAIT_INTERVAL_LONG];
         count = !count;
     }
     else{
         // Sequence to Start a Temperature Conversion
         [Konashi i2cStartCondition];
-        [NSThread sleepForTimeInterval:0.01];
+        [NSThread sleepForTimeInterval:I2C_WAIT_INTERVAL];
         data[0] = 0xE0;
         konashiSuccess = [Konashi i2cWrite:1 data:data address:HUMID_TEMP_SENSOR_ADDRESS];
+        NSLog(@"Konashi %d", konashiSuccess);
         if (konashiSuccess) [Konashi reset];
-        [NSThread sleepForTimeInterval:0.1];
+        [NSThread sleepForTimeInterval:I2C_WAIT_INTERVAL];
         konashiSuccess = [Konashi i2cRestartCondition];
+        NSLog(@"Konashi %d", konashiSuccess);
         if (konashiSuccess) [Konashi reset];
-        [NSThread sleepForTimeInterval:0.1];
+        [NSThread sleepForTimeInterval:I2C_WAIT_INTERVAL];
         konashiSuccess = [Konashi i2cReadRequest:3 address:HUMID_TEMP_SENSOR_ADDRESS];
+        NSLog(@"Konashi %d", konashiSuccess);
         if (konashiSuccess) [Konashi reset];
-        [NSThread sleepForTimeInterval:0.5];
+        [NSThread sleepForTimeInterval:I2C_WAIT_INTERVAL_LONG];
         count = !count;
     }
 }
@@ -172,10 +178,11 @@ double dcindex;
     unsigned char data[3];
     if(count){ // Read RH
         konashiSuccess = [Konashi i2cRead:3 data:data];
+        NSLog(@"Konashi %d", konashiSuccess);
         if (konashiSuccess) [Konashi reset];
-        [NSThread sleepForTimeInterval:0.1];
-        [NSThread sleepForTimeInterval:0.01];
+        [NSThread sleepForTimeInterval:I2C_WAIT_INTERVAL];
         konashiSuccess = [Konashi i2cStopCondition];
+        NSLog(@"Konashi %d", konashiSuccess);
         if (konashiSuccess) [Konashi reset];
         
         NSLog(@"RH:%X,%X", data[0], data[1]);
@@ -193,10 +200,11 @@ double dcindex;
     
     else{ // Read Temp.
         konashiSuccess = [Konashi i2cRead:3 data:data];
+        NSLog(@"Konashi %d", konashiSuccess);
         if (konashiSuccess) [Konashi reset];
-        [NSThread sleepForTimeInterval:0.1];
-        [NSThread sleepForTimeInterval:0.01];
+        [NSThread sleepForTimeInterval:I2C_WAIT_INTERVAL];
         konashiSuccess = [Konashi i2cStopCondition];
+        NSLog(@"Konashi %d", konashiSuccess);
         if (konashiSuccess) [Konashi reset];
         
         NSLog(@"Temp:%X,%X", data[0], data[1]);

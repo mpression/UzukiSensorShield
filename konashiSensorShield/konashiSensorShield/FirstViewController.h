@@ -9,7 +9,9 @@
 #import <GameKit/GameKit.h>
 #import <UIKit/UIKit.h>
 
-#define CHECK_SENSOR_INTERVAL           0.5f
+#define CHECK_SENSOR_INTERVAL           0.1001f
+#define I2C_WAIT_INTERVAL               0.1
+#define I2C_WAIT_INTERVAL_LONG          0.5
 
 #define I2C_GLOBAL_ADDRESS              0x00
 #define I2C_GLOBAL_RESET_CMD            0x06

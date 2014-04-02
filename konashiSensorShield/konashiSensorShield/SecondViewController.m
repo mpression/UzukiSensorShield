@@ -190,62 +190,114 @@ int     konashiSuccess;
     unsigned char data[2];
     NSLog(@"Start check sensor.");
     
-    //initialize
-
-    [Konashi i2cStartCondition];
+    //initialize: wait for 25ms or more.
     [NSThread sleepForTimeInterval:0.1];
+    
+    
+    // HW_KEYレジスタに0x17をWR　→オペレーション開始
+    konashiSuccess = [Konashi i2cStartCondition];
+    [NSThread sleepForTimeInterval:I2C_WAIT_INTERVAL];
     data[0] = REG_HW_KEY;
     data[1] = REG_HW_KEY_VALUE;
-    [Konashi i2cWrite:2 data:data address:PROX_LIGHT_UV_SENSOR_ADDRESS];
+    konashiSuccess = [Konashi i2cWrite:2 data:data address:PROX_LIGHT_UV_SENSOR_ADDRESS];
+    //NSLog(@"Konashi %d", konashiSuccess);
     if (konashiSuccess) [Konashi reset];
-    [NSThread sleepForTimeInterval:0.1];
+    //[NSThread sleepForTimeInterval:I2C_WAIT_INTERVAL];
     konashiSuccess = [Konashi i2cStopCondition];
+    //NSLog(@"Konashi %d", konashiSuccess);
     if (konashiSuccess) [Konashi reset];
-    [NSThread sleepForTimeInterval:0.1];
+    [NSThread sleepForTimeInterval:I2C_WAIT_INTERVAL];
     
+    // REG_COEF0-3レジスタにSiLabs指定の補正値をWR
     [Konashi i2cStartCondition];
-    [NSThread sleepForTimeInterval:0.1];
+    [NSThread sleepForTimeInterval:I2C_WAIT_INTERVAL];
     data[0] = REG_COEF0;
     data[1] = REG_COEF0_VALUE;
-    [Konashi i2cWrite:2 data:data address:PROX_LIGHT_UV_SENSOR_ADDRESS];
+    konashiSuccess = [Konashi i2cWrite:2 data:data address:PROX_LIGHT_UV_SENSOR_ADDRESS];
+    //NSLog(@"Konashi %d", konashiSuccess);
     if (konashiSuccess) [Konashi reset];
-    [NSThread sleepForTimeInterval:0.1];
+    [NSThread sleepForTimeInterval:I2C_WAIT_INTERVAL];
     konashiSuccess = [Konashi i2cStopCondition];
+    //NSLog(@"Konashi %d", konashiSuccess);
     if (konashiSuccess) [Konashi reset];
-    [NSThread sleepForTimeInterval:0.1];
+    [NSThread sleepForTimeInterval:I2C_WAIT_INTERVAL];
     
-    [Konashi i2cStartCondition];
-    [NSThread sleepForTimeInterval:0.1];
+    konashiSuccess = [Konashi i2cStartCondition];
+    //NSLog(@"Konashi %d", konashiSuccess);
+    if (konashiSuccess) [Konashi reset];
+    [NSThread sleepForTimeInterval:I2C_WAIT_INTERVAL];
     data[0] = REG_COEF1;
     data[1] = REG_COEF1_VALUE;
-    [Konashi i2cWrite:2 data:data address:PROX_LIGHT_UV_SENSOR_ADDRESS];
+    konashiSuccess = [Konashi i2cWrite:2 data:data address:PROX_LIGHT_UV_SENSOR_ADDRESS];
+    //NSLog(@"Konashi %d", konashiSuccess);
     if (konashiSuccess) [Konashi reset];
-    [NSThread sleepForTimeInterval:0.1];
+    [NSThread sleepForTimeInterval:I2C_WAIT_INTERVAL];
     konashiSuccess = [Konashi i2cStopCondition];
+    //NSLog(@"Konashi %d", konashiSuccess);
     if (konashiSuccess) [Konashi reset];
-    [NSThread sleepForTimeInterval:0.1];
+    [NSThread sleepForTimeInterval:I2C_WAIT_INTERVAL];
     
-    [Konashi i2cStartCondition];
-    [NSThread sleepForTimeInterval:0.1];
+    konashiSuccess = [Konashi i2cStartCondition];
+    //NSLog(@"Konashi %d", konashiSuccess);
+    if (konashiSuccess) [Konashi reset];
+    [NSThread sleepForTimeInterval:I2C_WAIT_INTERVAL];
     data[0] = REG_COEF2;
     data[1] = REG_COEF2_VALUE;
-    [Konashi i2cWrite:2 data:data address:PROX_LIGHT_UV_SENSOR_ADDRESS];
+    konashiSuccess = [Konashi i2cWrite:2 data:data address:PROX_LIGHT_UV_SENSOR_ADDRESS];
+    //NSLog(@"Konashi %d", konashiSuccess);
     if (konashiSuccess) [Konashi reset];
-    [NSThread sleepForTimeInterval:0.1];
+    [NSThread sleepForTimeInterval:I2C_WAIT_INTERVAL];
     konashiSuccess = [Konashi i2cStopCondition];
+    //NSLog(@"Konashi %d", konashiSuccess);
     if (konashiSuccess) [Konashi reset];
-    [NSThread sleepForTimeInterval:0.1];
+    [NSThread sleepForTimeInterval:I2C_WAIT_INTERVAL];
     
-    [Konashi i2cStartCondition];
-    [NSThread sleepForTimeInterval:0.1];
+    konashiSuccess = [Konashi i2cStartCondition];
+    //NSLog(@"Konashi %d", konashiSuccess);
+    if (konashiSuccess) [Konashi reset];
+    [NSThread sleepForTimeInterval:I2C_WAIT_INTERVAL];
     data[0] = REG_COEF3;
     data[1] = REG_COEF3_VALUE;
-    [Konashi i2cWrite:2 data:data address:PROX_LIGHT_UV_SENSOR_ADDRESS];
+    konashiSuccess = [Konashi i2cWrite:2 data:data address:PROX_LIGHT_UV_SENSOR_ADDRESS];
+    //NSLog(@"Konashi %d", konashiSuccess);
     if (konashiSuccess) [Konashi reset];
-    [NSThread sleepForTimeInterval:0.1];
+    [NSThread sleepForTimeInterval:I2C_WAIT_INTERVAL];
     konashiSuccess = [Konashi i2cStopCondition];
+    //NSLog(@"Konashi %d", konashiSuccess);
     if (konashiSuccess) [Konashi reset];
-    [NSThread sleepForTimeInterval:0.1];
+    [NSThread sleepForTimeInterval:I2C_WAIT_INTERVAL];
+    
+    
+    // Sequence to Start a UV Index Conversion
+    konashiSuccess = [Konashi i2cStartCondition];
+    //NSLog(@"Konashi %d", konashiSuccess);
+    if (konashiSuccess) [Konashi reset];
+    [NSThread sleepForTimeInterval:I2C_WAIT_INTERVAL];
+    data[0] = REG_PARAM_WR; //パラメータレジスタに書き込む値をセットするレジスタ
+    data[1] = EN_UV | EN_ALS_IR | EN_ALS_VIS; //パラメータレジスタに書き込む値
+    konashiSuccess = [Konashi i2cWrite:2 data:data address:PROX_LIGHT_UV_SENSOR_ADDRESS];
+    //NSLog(@"Konashi %d", konashiSuccess);
+    if (konashiSuccess) [Konashi reset];
+    [NSThread sleepForTimeInterval:I2C_WAIT_INTERVAL];
+    konashiSuccess = [Konashi i2cStopCondition];
+    //NSLog(@"Konashi %d", konashiSuccess);
+    if (konashiSuccess) [Konashi reset];
+    [NSThread sleepForTimeInterval:I2C_WAIT_INTERVAL];
+
+    konashiSuccess = [Konashi i2cStartCondition];
+    //[NSThread sleepForTimeInterval:0.1];
+    //NSLog(@"Konashi %d", konashiSuccess);
+    if (konashiSuccess) [Konashi reset];
+    data[0] = REG_COMMAND;
+    data[1] = 0xA0 | PARAM_CH_LIST; // 0xA0 is the PARAM_SET cmd.
+    konashiSuccess = [Konashi i2cWrite:2 data:data address:PROX_LIGHT_UV_SENSOR_ADDRESS];
+    //NSLog(@"Konashi %d", konashiSuccess);
+    if (konashiSuccess) [Konashi reset];
+    [NSThread sleepForTimeInterval:I2C_WAIT_INTERVAL];
+    konashiSuccess = [Konashi i2cStopCondition];
+    //NSLog(@"Konashi %d", konashiSuccess);
+    if (konashiSuccess) [Konashi reset];
+    [NSThread sleepForTimeInterval:I2C_WAIT_INTERVAL];
     
     //Sensor Event Handler
     [Konashi addObserver:self selector:@selector(readLightSensor) name:KONASHI_EVENT_I2C_READ_COMPLETE];
@@ -264,66 +316,60 @@ int     konashiSuccess;
     //[self hideParameterDisplay];
 }
 
-//TODO: to check the UV Index Sensor on the I2C bus.
+//To check the UV Index Sensor on the I2C bus.
 - (void)checkLightSensor:(NSTimer *)timer
 {
     unsigned char data[2];
-    // Sequence to Start a UV Index Conversion
-    [Konashi i2cStartCondition];
-    [NSThread sleepForTimeInterval:0.1];
-    data[0] = REG_PARAM_WR; //パラメータレジスタに書き込む値をセットするレジスタ
-    data[1] = EN_UV; //パラメータレジスタに書き込む値
-    konashiSuccess = [Konashi i2cWrite:2 data:data address:PROX_LIGHT_UV_SENSOR_ADDRESS];
-    if (konashiSuccess) [Konashi reset];
-    [NSThread sleepForTimeInterval:0.1];
-    konashiSuccess = [Konashi i2cStopCondition];
-    if (konashiSuccess) [Konashi reset];
-    [NSThread sleepForTimeInterval:0.1];
     
-    [Konashi i2cStartCondition];
-    [NSThread sleepForTimeInterval:0.1];
+    konashiSuccess = [Konashi i2cStartCondition];
+    //NSLog(@"Konashi %d", konashiSuccess);
+    if (konashiSuccess) [Konashi reset];
+    [NSThread sleepForTimeInterval:I2C_WAIT_INTERVAL];
+    
+    
     data[0] = REG_COMMAND;
-    data[1] = 0xA0 | PARAM_CH_LIST; // 0xA0 is the PARAM_SET cmd.
+    data[1] = ALS_FORCE; // Enter ALS Force Mode.
+    //data[1] = ALS_AUTO;   // Enter ALS Autonomous Mode.
     konashiSuccess = [Konashi i2cWrite:2 data:data address:PROX_LIGHT_UV_SENSOR_ADDRESS];
+    //NSLog(@"Konashi %d", konashiSuccess);
     if (konashiSuccess) [Konashi reset];
-    [NSThread sleepForTimeInterval:0.1];
+    [NSThread sleepForTimeInterval:I2C_WAIT_INTERVAL];
     konashiSuccess = [Konashi i2cStopCondition];
+    //NSLog(@"Konashi %d", konashiSuccess);
     if (konashiSuccess) [Konashi reset];
-    [NSThread sleepForTimeInterval:0.1];
+    [NSThread sleepForTimeInterval:I2C_WAIT_INTERVAL];
 
-    [Konashi i2cStartCondition];
-    [NSThread sleepForTimeInterval:0.1];
-    data[0] = REG_COMMAND;
-    data[1] = ALS_FORCE_VALUE; // Enter PS Mode cmd.
-    konashiSuccess = [Konashi i2cWrite:2 data:data address:PROX_LIGHT_UV_SENSOR_ADDRESS];
+    konashiSuccess = [Konashi i2cStartCondition];
+    //NSLog(@"Konashi %d", konashiSuccess);
     if (konashiSuccess) [Konashi reset];
-    [NSThread sleepForTimeInterval:0.1];
-    konashiSuccess = [Konashi i2cStopCondition];
-    if (konashiSuccess) [Konashi reset];
-    [NSThread sleepForTimeInterval:0.1];
+    [NSThread sleepForTimeInterval:I2C_WAIT_INTERVAL];
     
-    [Konashi i2cStartCondition];
-    [NSThread sleepForTimeInterval:0.1];
-    data[0] = REG_UVI_DATA0;
+    
+    //data[0] = 0x00; // Part ID : 0x45 for Si1145
+    //data[0] = REG_UVI_DATA0;
+    data[0] = REG_ALS_VIS_DATA0;
     konashiSuccess = [Konashi i2cWrite:1 data:data address:PROX_LIGHT_UV_SENSOR_ADDRESS];
+    //NSLog(@"Konashi %d", konashiSuccess);
     if (konashiSuccess) [Konashi reset];
-    [NSThread sleepForTimeInterval:0.1];
+    [NSThread sleepForTimeInterval:I2C_WAIT_INTERVAL];
     konashiSuccess = [Konashi i2cRestartCondition];
+    //NSLog(@"Konashi %d", konashiSuccess);
     if (konashiSuccess) [Konashi reset];
-    [NSThread sleepForTimeInterval:0.1];
-    
+    [NSThread sleepForTimeInterval:I2C_WAIT_INTERVAL];
+
     konashiSuccess = [Konashi i2cReadRequest:2 address:PROX_LIGHT_UV_SENSOR_ADDRESS];
+    //NSLog(@"Konashi %d", konashiSuccess);
     if (konashiSuccess) [Konashi reset];
-    [NSThread sleepForTimeInterval:0.5];
+    [NSThread sleepForTimeInterval:I2C_WAIT_INTERVAL_LONG];
 }
 
 - (void)readLightSensor // UV Index
 {
     unsigned char data[2];
     konashiSuccess = [Konashi i2cRead:2 data:data];
+    //NSLog(@"Konashi %d", konashiSuccess);
     if (konashiSuccess) [Konashi reset];
-    [NSThread sleepForTimeInterval:0.1];
-    //[NSThread sleepForTimeInterval:0.01];
+    [NSThread sleepForTimeInterval:I2C_WAIT_INTERVAL];
         
     NSLog(@"UVI_HL:%X,%X", data[1], data[0]);
         
@@ -337,18 +383,19 @@ int     konashiSuccess;
     _uviLabel.hidden = NO;
     
     konashiSuccess = [Konashi i2cStopCondition];
+    //NSLog(@"Konashi %d", konashiSuccess);
     if (konashiSuccess) [Konashi reset];
-    [NSThread sleepForTimeInterval:0.1];
+    [NSThread sleepForTimeInterval:I2C_WAIT_INTERVAL];
     
-    [Konashi i2cStartCondition];
-    [NSThread sleepForTimeInterval:0.1];
-    data[0] = REG_PARAM_WR;
-    data[1] = DIS_UV;
-    konashiSuccess = [Konashi i2cWrite:2 data:data address:PROX_LIGHT_UV_SENSOR_ADDRESS];
-    if (konashiSuccess) [Konashi reset];
-    [NSThread sleepForTimeInterval:0.1];
-    konashiSuccess = [Konashi i2cStopCondition];
-    if (konashiSuccess) [Konashi reset];
+    //[Konashi i2cStartCondition];
+    //[NSThread sleepForTimeInterval:0.1];
+    //data[0] = REG_PARAM_WR;
+    //data[1] = DIS_UV;
+    //konashiSuccess = [Konashi i2cWrite:2 data:data address:PROX_LIGHT_UV_SENSOR_ADDRESS];
+    //if (konashiSuccess) [Konashi reset];
+    //[NSThread sleepForTimeInterval:0.1];
+    //konashiSuccess = [Konashi i2cStopCondition];
+    //if (konashiSuccess) [Konashi reset];
     
 }
 @end
