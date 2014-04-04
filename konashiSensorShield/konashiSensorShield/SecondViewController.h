@@ -76,6 +76,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *uviLabel;
 @property (weak, nonatomic) IBOutlet UIButton *devicePairingButton;
 @property (weak, nonatomic) IBOutlet UIButton *tapDevicePairing;
-@property (weak, nonatomic) IBOutlet UISegmentedControl *selectSenseValue;
+
 
 @end

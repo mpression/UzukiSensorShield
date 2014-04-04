@@ -30,6 +30,17 @@
 		01024F6F18E66BB700F2B416 /* Mpression-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 01024F6E18E66BB700F2B416 /* Mpression-small.png */; };
 		01894E4F18E7724700E72836 /* header_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 01894E4E18E7724700E72836 /* header_logo.png */; };
 		01894E5118EA949300E72836 /* SiLabsLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 01894E5018EA949300E72836 /* SiLabsLogo.png */; };
+		01894EE518EE854A00E72836 /* weather_ca_007.png in Resources */ = {isa = PBXBuildFile; fileRef = 01894EE118EE854A00E72836 /* weather_ca_007.png */; };
+		01894EEC18EE8A4900E72836 /* weather_ca_001.png in Resources */ = {isa = PBXBuildFile; fileRef = 01894EE618EE8A4900E72836 /* weather_ca_001.png */; };
+		01894EED18EE8A4900E72836 /* weather_ca_009.png in Resources */ = {isa = PBXBuildFile; fileRef = 01894EE718EE8A4900E72836 /* weather_ca_009.png */; };
+		01894EEE18EE8A4900E72836 /* weather_ca_011.png in Resources */ = {isa = PBXBuildFile; fileRef = 01894EE818EE8A4900E72836 /* weather_ca_011.png */; };
+		01894EEF18EE8A4900E72836 /* weather_ca_013.png in Resources */ = {isa = PBXBuildFile; fileRef = 01894EE918EE8A4900E72836 /* weather_ca_013.png */; };
+		01894EF018EE8A4900E72836 /* weather_ca_017.png in Resources */ = {isa = PBXBuildFile; fileRef = 01894EEA18EE8A4900E72836 /* weather_ca_017.png */; };
+		01894EF118EE8A4900E72836 /* weather_ca_015.png in Resources */ = {isa = PBXBuildFile; fileRef = 01894EEB18EE8A4900E72836 /* weather_ca_015.png */; };
+		01894EF318EE8B4300E72836 /* weather_ca_003.png in Resources */ = {isa = PBXBuildFile; fileRef = 01894EF218EE8B4300E72836 /* weather_ca_003.png */; };
+		01894EF718EE94FC00E72836 /* lgi01b201309250600.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01894EF418EE94FC00E72836 /* lgi01b201309250600.jpg */; };
+		01894EF818EE94FC00E72836 /* lgi01a201309250600.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01894EF518EE94FC00E72836 /* lgi01a201309250600.jpg */; };
+		01894EF918EE94FC00E72836 /* lgi01c201309250600.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01894EF618EE94FC00E72836 /* lgi01c201309250600.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +86,17 @@
 		01024F6E18E66BB700F2B416 /* Mpression-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mpression-small.png"; sourceTree = "<group>"; };
 		01894E4E18E7724700E72836 /* header_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = header_logo.png; sourceTree = "<group>"; };
 		01894E5018EA949300E72836 /* SiLabsLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SiLabsLogo.png; sourceTree = "<group>"; };
+		01894EE118EE854A00E72836 /* weather_ca_007.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weather_ca_007.png; path = konashiSensorShield/weather_ca_007.png; sourceTree = "<group>"; };
+		01894EE618EE8A4900E72836 /* weather_ca_001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weather_ca_001.png; sourceTree = "<group>"; };
+		01894EE718EE8A4900E72836 /* weather_ca_009.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weather_ca_009.png; sourceTree = "<group>"; };
+		01894EE818EE8A4900E72836 /* weather_ca_011.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weather_ca_011.png; sourceTree = "<group>"; };
+		01894EE918EE8A4900E72836 /* weather_ca_013.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weather_ca_013.png; sourceTree = "<group>"; };
+		01894EEA18EE8A4900E72836 /* weather_ca_017.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weather_ca_017.png; sourceTree = "<group>"; };
+		01894EEB18EE8A4900E72836 /* weather_ca_015.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weather_ca_015.png; sourceTree = "<group>"; };
+		01894EF218EE8B4300E72836 /* weather_ca_003.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weather_ca_003.png; sourceTree = "<group>"; };
+		01894EF418EE94FC00E72836 /* lgi01b201309250600.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lgi01b201309250600.jpg; sourceTree = "<group>"; };
+		01894EF518EE94FC00E72836 /* lgi01a201309250600.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lgi01a201309250600.jpg; sourceTree = "<group>"; };
+		01894EF618EE94FC00E72836 /* lgi01c201309250600.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lgi01c201309250600.jpg; sourceTree = "<group>"; };
 		01AF611A18E6B91700DF534D /* si114x_defs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = si114x_defs.h; path = konashiSensorShield/si114x_defs.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,9 +129,20 @@
 		01024F0C18E4EF4B00F2B416 = {
 			isa = PBXGroup;
 			children = (
+				01894EF418EE94FC00E72836 /* lgi01b201309250600.jpg */,
+				01894EF518EE94FC00E72836 /* lgi01a201309250600.jpg */,
+				01894EF618EE94FC00E72836 /* lgi01c201309250600.jpg */,
 				01894E5018EA949300E72836 /* SiLabsLogo.png */,
 				01894E4E18E7724700E72836 /* header_logo.png */,
 				01024F6E18E66BB700F2B416 /* Mpression-small.png */,
+				01894EF218EE8B4300E72836 /* weather_ca_003.png */,
+				01894EE618EE8A4900E72836 /* weather_ca_001.png */,
+				01894EE118EE854A00E72836 /* weather_ca_007.png */,
+				01894EE718EE8A4900E72836 /* weather_ca_009.png */,
+				01894EE818EE8A4900E72836 /* weather_ca_011.png */,
+				01894EE918EE8A4900E72836 /* weather_ca_013.png */,
+				01894EEA18EE8A4900E72836 /* weather_ca_017.png */,
+				01894EEB18EE8A4900E72836 /* weather_ca_015.png */,
 				01AF611A18E6B91700DF534D /* si114x_defs.h */,
 				01024F6118E5B5E700F2B416 /* Konashi */,
 				01024F1E18E4EF4B00F2B416 /* konashiSensorShield */,
@@ -286,13 +319,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01894EF718EE94FC00E72836 /* lgi01b201309250600.jpg in Resources */,
+				01894EF918EE94FC00E72836 /* lgi01c201309250600.jpg in Resources */,
+				01894EEF18EE8A4900E72836 /* weather_ca_013.png in Resources */,
+				01894EE518EE854A00E72836 /* weather_ca_007.png in Resources */,
 				01024F6A18E5B98C00F2B416 /* SVProgressHUD.bundle in Resources */,
+				01894EEE18EE8A4900E72836 /* weather_ca_011.png in Resources */,
 				01024F3418E4EF4B00F2B416 /* Images.xcassets in Resources */,
+				01894EF318EE8B4300E72836 /* weather_ca_003.png in Resources */,
+				01894EED18EE8A4900E72836 /* weather_ca_009.png in Resources */,
+				01894EF118EE8A4900E72836 /* weather_ca_015.png in Resources */,
 				01024F6F18E66BB700F2B416 /* Mpression-small.png in Resources */,
 				01024F2318E4EF4B00F2B416 /* InfoPlist.strings in Resources */,
 				01894E4F18E7724700E72836 /* header_logo.png in Resources */,
+				01894EEC18EE8A4900E72836 /* weather_ca_001.png in Resources */,
 				01894E5118EA949300E72836 /* SiLabsLogo.png in Resources */,
+				01894EF818EE94FC00E72836 /* lgi01a201309250600.jpg in Resources */,
 				01024F2C18E4EF4B00F2B416 /* Main.storyboard in Resources */,
+				01894EF018EE8A4900E72836 /* weather_ca_017.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
