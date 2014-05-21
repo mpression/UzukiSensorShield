@@ -28,6 +28,8 @@
 		01024F6A18E5B98C00F2B416 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 01024F6718E5B98C00F2B416 /* SVProgressHUD.bundle */; };
 		01024F6B18E5B98C00F2B416 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 01024F6918E5B98C00F2B416 /* SVProgressHUD.m */; };
 		01024F6F18E66BB700F2B416 /* Mpression-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 01024F6E18E66BB700F2B416 /* Mpression-small.png */; };
+		0117C4F7192B9E0C005E27D9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0117C4F6192B9E0C005E27D9 /* AVFoundation.framework */; };
+		0117C4F9192C31C0005E27D9 /* Fire_Alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0117C4F8192C31C0005E27D9 /* Fire_Alarm.mp3 */; };
 		017FC1B618EECB47008A616B /* weather_ca_005.png in Resources */ = {isa = PBXBuildFile; fileRef = 017FC1B518EECB47008A616B /* weather_ca_005.png */; };
 		01894E4F18E7724700E72836 /* header_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 01894E4E18E7724700E72836 /* header_logo.png */; };
 		01894E5118EA949300E72836 /* SiLabsLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 01894E5018EA949300E72836 /* SiLabsLogo.png */; };
@@ -42,6 +44,9 @@
 		01894EF718EE94FC00E72836 /* lgi01b201309250600.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01894EF418EE94FC00E72836 /* lgi01b201309250600.jpg */; };
 		01894EF818EE94FC00E72836 /* lgi01a201309250600.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01894EF518EE94FC00E72836 /* lgi01a201309250600.jpg */; };
 		01894EF918EE94FC00E72836 /* lgi01c201309250600.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01894EF618EE94FC00E72836 /* lgi01c201309250600.jpg */; };
+		01D9BE3F192B995000E96860 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01D9BE3E192B995000E96860 /* AudioToolbox.framework */; };
+		01F1287C18F62242005AAFD1 /* alert-146730_640.png in Resources */ = {isa = PBXBuildFile; fileRef = 01F1287B18F62242005AAFD1 /* alert-146730_640.png */; };
+		01F1288818F6683F005AAFD1 /* Adxl345.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F1288718F6683F005AAFD1 /* Adxl345.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +90,8 @@
 		01024F6818E5B98C00F2B416 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
 		01024F6918E5B98C00F2B416 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 		01024F6E18E66BB700F2B416 /* Mpression-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mpression-small.png"; sourceTree = "<group>"; };
+		0117C4F6192B9E0C005E27D9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		0117C4F8192C31C0005E27D9 /* Fire_Alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Fire_Alarm.mp3; sourceTree = "<group>"; };
 		017FC1B518EECB47008A616B /* weather_ca_005.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weather_ca_005.png; sourceTree = "<group>"; };
 		01894E4E18E7724700E72836 /* header_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = header_logo.png; sourceTree = "<group>"; };
 		01894E5018EA949300E72836 /* SiLabsLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SiLabsLogo.png; sourceTree = "<group>"; };
@@ -100,6 +107,10 @@
 		01894EF518EE94FC00E72836 /* lgi01a201309250600.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lgi01a201309250600.jpg; sourceTree = "<group>"; };
 		01894EF618EE94FC00E72836 /* lgi01c201309250600.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lgi01c201309250600.jpg; sourceTree = "<group>"; };
 		01AF611A18E6B91700DF534D /* si114x_defs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = si114x_defs.h; path = konashiSensorShield/si114x_defs.h; sourceTree = "<group>"; };
+		01D9BE3E192B995000E96860 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		01F1287B18F62242005AAFD1 /* alert-146730_640.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "alert-146730_640.png"; path = "konashiSensorShield/alert-146730_640.png"; sourceTree = "<group>"; };
+		01F1288618F6683F005AAFD1 /* Adxl345.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Adxl345.h; path = Sensors/Adxl345.h; sourceTree = "<group>"; };
+		01F1288718F6683F005AAFD1 /* Adxl345.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Adxl345.m; path = Sensors/Adxl345.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +118,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0117C4F7192B9E0C005E27D9 /* AVFoundation.framework in Frameworks */,
+				01D9BE3F192B995000E96860 /* AudioToolbox.framework in Frameworks */,
 				01024F5318E4EF6900F2B416 /* QuartzCore.framework in Frameworks */,
 				01024F5118E4EF5800F2B416 /* CoreBluetooth.framework in Frameworks */,
 				01024F1B18E4EF4B00F2B416 /* CoreGraphics.framework in Frameworks */,
@@ -131,6 +144,9 @@
 		01024F0C18E4EF4B00F2B416 = {
 			isa = PBXGroup;
 			children = (
+				0117C4F8192C31C0005E27D9 /* Fire_Alarm.mp3 */,
+				01F1288618F6683F005AAFD1 /* Adxl345.h */,
+				01F1288718F6683F005AAFD1 /* Adxl345.m */,
 				01894EF418EE94FC00E72836 /* lgi01b201309250600.jpg */,
 				01894EF518EE94FC00E72836 /* lgi01a201309250600.jpg */,
 				01894EF618EE94FC00E72836 /* lgi01c201309250600.jpg */,
@@ -146,6 +162,7 @@
 				01894EE918EE8A4900E72836 /* weather_ca_013.png */,
 				01894EEA18EE8A4900E72836 /* weather_ca_017.png */,
 				01894EEB18EE8A4900E72836 /* weather_ca_015.png */,
+				01F1287B18F62242005AAFD1 /* alert-146730_640.png */,
 				01AF611A18E6B91700DF534D /* si114x_defs.h */,
 				01024F6118E5B5E700F2B416 /* Konashi */,
 				01024F1E18E4EF4B00F2B416 /* konashiSensorShield */,
@@ -167,6 +184,8 @@
 		01024F1718E4EF4B00F2B416 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0117C4F6192B9E0C005E27D9 /* AVFoundation.framework */,
+				01D9BE3E192B995000E96860 /* AudioToolbox.framework */,
 				01024F5218E4EF6900F2B416 /* QuartzCore.framework */,
 				01024F5018E4EF5800F2B416 /* CoreBluetooth.framework */,
 				01024F1818E4EF4B00F2B416 /* Foundation.framework */,
@@ -322,12 +341,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0117C4F9192C31C0005E27D9 /* Fire_Alarm.mp3 in Resources */,
 				01894EF718EE94FC00E72836 /* lgi01b201309250600.jpg in Resources */,
 				01894EF918EE94FC00E72836 /* lgi01c201309250600.jpg in Resources */,
 				01894EEF18EE8A4900E72836 /* weather_ca_013.png in Resources */,
 				01894EE518EE854A00E72836 /* weather_ca_007.png in Resources */,
 				01024F6A18E5B98C00F2B416 /* SVProgressHUD.bundle in Resources */,
 				01894EEE18EE8A4900E72836 /* weather_ca_011.png in Resources */,
+				01F1287C18F62242005AAFD1 /* alert-146730_640.png in Resources */,
 				01024F3418E4EF4B00F2B416 /* Images.xcassets in Resources */,
 				01894EF318EE8B4300E72836 /* weather_ca_003.png in Resources */,
 				01894EED18EE8A4900E72836 /* weather_ca_009.png in Resources */,
@@ -363,6 +384,7 @@
 				01024F2918E4EF4B00F2B416 /* AppDelegate.m in Sources */,
 				01024F2F18E4EF4B00F2B416 /* FirstViewController.m in Sources */,
 				01024F2518E4EF4B00F2B416 /* main.m in Sources */,
+				01F1288818F6683F005AAFD1 /* Adxl345.m in Sources */,
 				01024F6518E5B5E700F2B416 /* Konashi.m in Sources */,
 				01024F6B18E5B98C00F2B416 /* SVProgressHUD.m in Sources */,
 			);
