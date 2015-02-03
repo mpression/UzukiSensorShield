@@ -24,6 +24,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import <AudioToolbox/AudioServices.h>
 #import "si114x_defs.h"
+#import "Bluetooth.h"
 
 #define CHECK_SENSOR_INTERVAL           0.1001f
 #define I2C_WAIT_INTERVAL               0.1

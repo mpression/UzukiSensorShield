@@ -24,12 +24,36 @@
 		01024F4718E4EF4B00F2B416 /* konashiSensorShieldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 01024F4618E4EF4B00F2B416 /* konashiSensorShieldTests.m */; };
 		01024F5118E4EF5800F2B416 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01024F5018E4EF5800F2B416 /* CoreBluetooth.framework */; };
 		01024F5318E4EF6900F2B416 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01024F5218E4EF6900F2B416 /* QuartzCore.framework */; };
-		01024F6518E5B5E700F2B416 /* Konashi.m in Sources */ = {isa = PBXBuildFile; fileRef = 01024F6318E5B5E700F2B416 /* Konashi.m */; };
-		01024F6A18E5B98C00F2B416 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 01024F6718E5B98C00F2B416 /* SVProgressHUD.bundle */; };
-		01024F6B18E5B98C00F2B416 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 01024F6918E5B98C00F2B416 /* SVProgressHUD.m */; };
 		01024F6F18E66BB700F2B416 /* Mpression-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 01024F6E18E66BB700F2B416 /* Mpression-small.png */; };
 		0117C4F7192B9E0C005E27D9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0117C4F6192B9E0C005E27D9 /* AVFoundation.framework */; };
 		0117C4F9192C31C0005E27D9 /* Fire_Alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0117C4F8192C31C0005E27D9 /* Fire_Alarm.mp3 */; };
+		0174C968192CAFFA0089F8C9 /* Bluetooth.m in Sources */ = {isa = PBXBuildFile; fileRef = 0174C967192CAFFA0089F8C9 /* Bluetooth.m */; };
+		0174C998192D74F90089F8C9 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 0174C977192D74F90089F8C9 /* Icon-72.png */; };
+		0174C999192D74F90089F8C9 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0174C978192D74F90089F8C9 /* Icon-72@2x.png */; };
+		0174C99A192D74F90089F8C9 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 0174C979192D74F90089F8C9 /* Icon-Small-50.png */; };
+		0174C99B192D74F90089F8C9 /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0174C97A192D74F90089F8C9 /* Icon-Small-50@2x.png */; };
+		0174C99C192D74F90089F8C9 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 0174C97B192D74F90089F8C9 /* Icon-Small.png */; };
+		0174C99D192D74F90089F8C9 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0174C97C192D74F90089F8C9 /* Icon-Small@2x.png */; };
+		0174C99E192D74F90089F8C9 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0174C97D192D74F90089F8C9 /* Icon.png */; };
+		0174C99F192D74F90089F8C9 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0174C97E192D74F90089F8C9 /* Icon@2x.png */; };
+		0174C9A0192D74F90089F8C9 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 0174C97F192D74F90089F8C9 /* iTunesArtwork.png */; };
+		0174C9A1192D74F90089F8C9 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0174C980192D74F90089F8C9 /* iTunesArtwork@2x.png */; };
+		0174C9A2192D74F90089F8C9 /* Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 0174C982192D74F90089F8C9 /* Icon-40.png */; };
+		0174C9A3192D74F90089F8C9 /* Icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0174C983192D74F90089F8C9 /* Icon-40@2x.png */; };
+		0174C9A4192D74F90089F8C9 /* Icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = 0174C984192D74F90089F8C9 /* Icon-60.png */; };
+		0174C9A5192D74F90089F8C9 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0174C985192D74F90089F8C9 /* Icon-60@2x.png */; };
+		0174C9A6192D74F90089F8C9 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 0174C986192D74F90089F8C9 /* Icon-72.png */; };
+		0174C9A7192D74F90089F8C9 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0174C987192D74F90089F8C9 /* Icon-72@2x.png */; };
+		0174C9A8192D74F90089F8C9 /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 0174C988192D74F90089F8C9 /* Icon-76.png */; };
+		0174C9A9192D74F90089F8C9 /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0174C989192D74F90089F8C9 /* Icon-76@2x.png */; };
+		0174C9AA192D74F90089F8C9 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 0174C98A192D74F90089F8C9 /* Icon-Small-50.png */; };
+		0174C9AB192D74F90089F8C9 /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0174C98B192D74F90089F8C9 /* Icon-Small-50@2x.png */; };
+		0174C9AC192D74F90089F8C9 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 0174C98C192D74F90089F8C9 /* Icon-Small.png */; };
+		0174C9AD192D74F90089F8C9 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0174C98D192D74F90089F8C9 /* Icon-Small@2x.png */; };
+		0174C9AE192D74F90089F8C9 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0174C98E192D74F90089F8C9 /* Icon.png */; };
+		0174C9AF192D74F90089F8C9 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0174C98F192D74F90089F8C9 /* Icon@2x.png */; };
+		0174C9B0192D74F90089F8C9 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 0174C990192D74F90089F8C9 /* iTunesArtwork.png */; };
+		0174C9B1192D74F90089F8C9 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0174C991192D74F90089F8C9 /* iTunesArtwork@2x.png */; };
 		017FC1B618EECB47008A616B /* weather_ca_005.png in Resources */ = {isa = PBXBuildFile; fileRef = 017FC1B518EECB47008A616B /* weather_ca_005.png */; };
 		01894E4F18E7724700E72836 /* header_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 01894E4E18E7724700E72836 /* header_logo.png */; };
 		01894E5118EA949300E72836 /* SiLabsLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 01894E5018EA949300E72836 /* SiLabsLogo.png */; };
@@ -47,6 +71,21 @@
 		01D9BE3F192B995000E96860 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01D9BE3E192B995000E96860 /* AudioToolbox.framework */; };
 		01F1287C18F62242005AAFD1 /* alert-146730_640.png in Resources */ = {isa = PBXBuildFile; fileRef = 01F1287B18F62242005AAFD1 /* alert-146730_640.png */; };
 		01F1288818F6683F005AAFD1 /* Adxl345.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F1288718F6683F005AAFD1 /* Adxl345.m */; };
+		01F3EC301A8100EF00EF3D4B /* CBPeripheral+Konashi.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F3EC0B1A8100EF00EF3D4B /* CBPeripheral+Konashi.m */; };
+		01F3EC311A8100EF00EF3D4B /* CBService+Konashi.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F3EC0D1A8100EF00EF3D4B /* CBService+Konashi.m */; };
+		01F3EC321A8100EF00EF3D4B /* CBUUID+Konashi.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F3EC0F1A8100EF00EF3D4B /* CBUUID+Konashi.m */; };
+		01F3EC331A8100EF00EF3D4B /* Konashi+ACDrive.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F3EC121A8100EF00EF3D4B /* Konashi+ACDrive.m */; };
+		01F3EC341A8100EF00EF3D4B /* Konashi+ADC.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F3EC141A8100EF00EF3D4B /* Konashi+ADC.m */; };
+		01F3EC351A8100EF00EF3D4B /* Konashi+Grove.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F3EC161A8100EF00EF3D4B /* Konashi+Grove.m */; };
+		01F3EC361A8100EF00EF3D4B /* Konashi+JavaScriptBindings.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F3EC181A8100EF00EF3D4B /* Konashi+JavaScriptBindings.m */; };
+		01F3EC371A8100EF00EF3D4B /* Konashi+UI.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F3EC1A1A8100EF00EF3D4B /* Konashi+UI.m */; };
+		01F3EC381A8100EF00EF3D4B /* KNSKonashiPeripheralImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F3EC201A8100EF00EF3D4B /* KNSKonashiPeripheralImpl.m */; };
+		01F3EC391A8100EF00EF3D4B /* KNSKoshianPeripheralImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F3EC221A8100EF00EF3D4B /* KNSKoshianPeripheralImpl.m */; };
+		01F3EC3A1A8100EF00EF3D4B /* KNSPeripheralBaseImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F3EC241A8100EF00EF3D4B /* KNSPeripheralBaseImpl.m */; };
+		01F3EC3B1A8100EF00EF3D4B /* KNSHandlerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F3EC281A8100EF00EF3D4B /* KNSHandlerManager.m */; };
+		01F3EC3C1A8100EF00EF3D4B /* KNSPeripheral.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F3EC2A1A8100EF00EF3D4B /* KNSPeripheral.m */; };
+		01F3EC3D1A8100EF00EF3D4B /* Konashi.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F3EC2D1A8100EF00EF3D4B /* Konashi.m */; };
+		01F3EC3E1A8100EF00EF3D4B /* KonashiUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F3EC2F1A8100EF00EF3D4B /* KonashiUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,15 +122,37 @@
 		01024F4618E4EF4B00F2B416 /* konashiSensorShieldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = konashiSensorShieldTests.m; sourceTree = "<group>"; };
 		01024F5018E4EF5800F2B416 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		01024F5218E4EF6900F2B416 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		01024F6218E5B5E700F2B416 /* Konashi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Konashi.h; sourceTree = "<group>"; };
-		01024F6318E5B5E700F2B416 /* Konashi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Konashi.m; sourceTree = "<group>"; };
-		01024F6418E5B5E700F2B416 /* KonashiDb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KonashiDb.h; sourceTree = "<group>"; };
-		01024F6718E5B98C00F2B416 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
-		01024F6818E5B98C00F2B416 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
-		01024F6918E5B98C00F2B416 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 		01024F6E18E66BB700F2B416 /* Mpression-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mpression-small.png"; sourceTree = "<group>"; };
 		0117C4F6192B9E0C005E27D9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		0117C4F8192C31C0005E27D9 /* Fire_Alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Fire_Alarm.mp3; sourceTree = "<group>"; };
+		0174C966192CAFFA0089F8C9 /* Bluetooth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bluetooth.h; sourceTree = "<group>"; };
+		0174C967192CAFFA0089F8C9 /* Bluetooth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bluetooth.m; sourceTree = "<group>"; };
+		0174C977192D74F90089F8C9 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		0174C978192D74F90089F8C9 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		0174C979192D74F90089F8C9 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		0174C97A192D74F90089F8C9 /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = "<group>"; };
+		0174C97B192D74F90089F8C9 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		0174C97C192D74F90089F8C9 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		0174C97D192D74F90089F8C9 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		0174C97E192D74F90089F8C9 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		0174C97F192D74F90089F8C9 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
+		0174C980192D74F90089F8C9 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		0174C982192D74F90089F8C9 /* Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40.png"; sourceTree = "<group>"; };
+		0174C983192D74F90089F8C9 /* Icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@2x.png"; sourceTree = "<group>"; };
+		0174C984192D74F90089F8C9 /* Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60.png"; sourceTree = "<group>"; };
+		0174C985192D74F90089F8C9 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
+		0174C986192D74F90089F8C9 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		0174C987192D74F90089F8C9 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		0174C988192D74F90089F8C9 /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
+		0174C989192D74F90089F8C9 /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
+		0174C98A192D74F90089F8C9 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		0174C98B192D74F90089F8C9 /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = "<group>"; };
+		0174C98C192D74F90089F8C9 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		0174C98D192D74F90089F8C9 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		0174C98E192D74F90089F8C9 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		0174C98F192D74F90089F8C9 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		0174C990192D74F90089F8C9 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
+		0174C991192D74F90089F8C9 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
 		017FC1B518EECB47008A616B /* weather_ca_005.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weather_ca_005.png; sourceTree = "<group>"; };
 		01894E4E18E7724700E72836 /* header_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = header_logo.png; sourceTree = "<group>"; };
 		01894E5018EA949300E72836 /* SiLabsLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SiLabsLogo.png; sourceTree = "<group>"; };
@@ -111,6 +172,42 @@
 		01F1287B18F62242005AAFD1 /* alert-146730_640.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "alert-146730_640.png"; path = "konashiSensorShield/alert-146730_640.png"; sourceTree = "<group>"; };
 		01F1288618F6683F005AAFD1 /* Adxl345.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Adxl345.h; path = Sensors/Adxl345.h; sourceTree = "<group>"; };
 		01F1288718F6683F005AAFD1 /* Adxl345.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Adxl345.m; path = Sensors/Adxl345.m; sourceTree = "<group>"; };
+		01F3EC0A1A8100EF00EF3D4B /* CBPeripheral+Konashi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBPeripheral+Konashi.h"; sourceTree = "<group>"; };
+		01F3EC0B1A8100EF00EF3D4B /* CBPeripheral+Konashi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBPeripheral+Konashi.m"; sourceTree = "<group>"; };
+		01F3EC0C1A8100EF00EF3D4B /* CBService+Konashi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBService+Konashi.h"; sourceTree = "<group>"; };
+		01F3EC0D1A8100EF00EF3D4B /* CBService+Konashi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBService+Konashi.m"; sourceTree = "<group>"; };
+		01F3EC0E1A8100EF00EF3D4B /* CBUUID+Konashi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBUUID+Konashi.h"; sourceTree = "<group>"; };
+		01F3EC0F1A8100EF00EF3D4B /* CBUUID+Konashi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBUUID+Konashi.m"; sourceTree = "<group>"; };
+		01F3EC111A8100EF00EF3D4B /* Konashi+ACDrive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Konashi+ACDrive.h"; sourceTree = "<group>"; };
+		01F3EC121A8100EF00EF3D4B /* Konashi+ACDrive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Konashi+ACDrive.m"; sourceTree = "<group>"; };
+		01F3EC131A8100EF00EF3D4B /* Konashi+ADC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Konashi+ADC.h"; sourceTree = "<group>"; };
+		01F3EC141A8100EF00EF3D4B /* Konashi+ADC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Konashi+ADC.m"; sourceTree = "<group>"; };
+		01F3EC151A8100EF00EF3D4B /* Konashi+Grove.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Konashi+Grove.h"; sourceTree = "<group>"; };
+		01F3EC161A8100EF00EF3D4B /* Konashi+Grove.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Konashi+Grove.m"; sourceTree = "<group>"; };
+		01F3EC171A8100EF00EF3D4B /* Konashi+JavaScriptBindings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Konashi+JavaScriptBindings.h"; sourceTree = "<group>"; };
+		01F3EC181A8100EF00EF3D4B /* Konashi+JavaScriptBindings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Konashi+JavaScriptBindings.m"; sourceTree = "<group>"; };
+		01F3EC191A8100EF00EF3D4B /* Konashi+UI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Konashi+UI.h"; sourceTree = "<group>"; };
+		01F3EC1A1A8100EF00EF3D4B /* Konashi+UI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Konashi+UI.m"; sourceTree = "<group>"; };
+		01F3EC1B1A8100EF00EF3D4B /* KonashiJavaScriptBindingsProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KonashiJavaScriptBindingsProtocol.h; sourceTree = "<group>"; };
+		01F3EC1D1A8100EF00EF3D4B /* KonashiConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KonashiConstant.h; sourceTree = "<group>"; };
+		01F3EC1F1A8100EF00EF3D4B /* KNSKonashiPeripheralImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNSKonashiPeripheralImpl.h; sourceTree = "<group>"; };
+		01F3EC201A8100EF00EF3D4B /* KNSKonashiPeripheralImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNSKonashiPeripheralImpl.m; sourceTree = "<group>"; };
+		01F3EC211A8100EF00EF3D4B /* KNSKoshianPeripheralImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNSKoshianPeripheralImpl.h; sourceTree = "<group>"; };
+		01F3EC221A8100EF00EF3D4B /* KNSKoshianPeripheralImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNSKoshianPeripheralImpl.m; sourceTree = "<group>"; };
+		01F3EC231A8100EF00EF3D4B /* KNSPeripheralBaseImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNSPeripheralBaseImpl.h; sourceTree = "<group>"; };
+		01F3EC241A8100EF00EF3D4B /* KNSPeripheralBaseImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNSPeripheralBaseImpl.m; sourceTree = "<group>"; };
+		01F3EC251A8100EF00EF3D4B /* KNSPeripheralImplProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNSPeripheralImplProtocol.h; sourceTree = "<group>"; };
+		01F3EC261A8100EF00EF3D4B /* KNSPeripheralImpls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNSPeripheralImpls.h; sourceTree = "<group>"; };
+		01F3EC271A8100EF00EF3D4B /* KNSHandlerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNSHandlerManager.h; sourceTree = "<group>"; };
+		01F3EC281A8100EF00EF3D4B /* KNSHandlerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNSHandlerManager.m; sourceTree = "<group>"; };
+		01F3EC291A8100EF00EF3D4B /* KNSPeripheral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNSPeripheral.h; sourceTree = "<group>"; };
+		01F3EC2A1A8100EF00EF3D4B /* KNSPeripheral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNSPeripheral.m; sourceTree = "<group>"; };
+		01F3EC2B1A8100EF00EF3D4B /* Konashi-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Konashi-Prefix.pch"; sourceTree = "<group>"; };
+		01F3EC2C1A8100EF00EF3D4B /* Konashi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Konashi.h; sourceTree = "<group>"; };
+		01F3EC2D1A8100EF00EF3D4B /* Konashi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Konashi.m; sourceTree = "<group>"; };
+		01F3EC2E1A8100EF00EF3D4B /* KonashiUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KonashiUtils.h; sourceTree = "<group>"; };
+		01F3EC2F1A8100EF00EF3D4B /* KonashiUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KonashiUtils.m; sourceTree = "<group>"; };
+		01F3EC3F1A81015100EF3D4B /* konashiInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = konashiInterface.h; path = ../konashiInterface.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +241,8 @@
 		01024F0C18E4EF4B00F2B416 = {
 			isa = PBXGroup;
 			children = (
+				01F3EC071A8100EF00EF3D4B /* Konashi */,
+				0174C969192D74F90089F8C9 /* icon */,
 				0117C4F8192C31C0005E27D9 /* Fire_Alarm.mp3 */,
 				01F1288618F6683F005AAFD1 /* Adxl345.h */,
 				01F1288718F6683F005AAFD1 /* Adxl345.m */,
@@ -164,7 +263,6 @@
 				01894EEB18EE8A4900E72836 /* weather_ca_015.png */,
 				01F1287B18F62242005AAFD1 /* alert-146730_640.png */,
 				01AF611A18E6B91700DF534D /* si114x_defs.h */,
-				01024F6118E5B5E700F2B416 /* Konashi */,
 				01024F1E18E4EF4B00F2B416 /* konashiSensorShield */,
 				01024F4018E4EF4B00F2B416 /* konashiSensorShieldTests */,
 				01024F1718E4EF4B00F2B416 /* Frameworks */,
@@ -200,10 +298,13 @@
 			isa = PBXGroup;
 			children = (
 				01024F2718E4EF4B00F2B416 /* AppDelegate.h */,
+				01F3EC3F1A81015100EF3D4B /* konashiInterface.h */,
 				01024F2818E4EF4B00F2B416 /* AppDelegate.m */,
 				01024F2A18E4EF4B00F2B416 /* Main.storyboard */,
 				01024F2D18E4EF4B00F2B416 /* FirstViewController.h */,
 				01024F2E18E4EF4B00F2B416 /* FirstViewController.m */,
+				0174C966192CAFFA0089F8C9 /* Bluetooth.h */,
+				0174C967192CAFFA0089F8C9 /* Bluetooth.m */,
 				01024F3018E4EF4B00F2B416 /* SecondViewController.h */,
 				01024F3118E4EF4B00F2B416 /* SecondViewController.m */,
 				01024F3318E4EF4B00F2B416 /* Images.xcassets */,
@@ -241,25 +342,135 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		01024F6118E5B5E700F2B416 /* Konashi */ = {
+		0174C969192D74F90089F8C9 /* icon */ = {
 			isa = PBXGroup;
 			children = (
-				01024F6218E5B5E700F2B416 /* Konashi.h */,
-				01024F6318E5B5E700F2B416 /* Konashi.m */,
-				01024F6418E5B5E700F2B416 /* KonashiDb.h */,
-				01024F6618E5B98C00F2B416 /* SVProgressHUD */,
+				0174C976192D74F90089F8C9 /* ios */,
+				0174C981192D74F90089F8C9 /* ios7 */,
+			);
+			path = icon;
+			sourceTree = "<group>";
+		};
+		0174C976192D74F90089F8C9 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				0174C977192D74F90089F8C9 /* Icon-72.png */,
+				0174C978192D74F90089F8C9 /* Icon-72@2x.png */,
+				0174C979192D74F90089F8C9 /* Icon-Small-50.png */,
+				0174C97A192D74F90089F8C9 /* Icon-Small-50@2x.png */,
+				0174C97B192D74F90089F8C9 /* Icon-Small.png */,
+				0174C97C192D74F90089F8C9 /* Icon-Small@2x.png */,
+				0174C97D192D74F90089F8C9 /* Icon.png */,
+				0174C97E192D74F90089F8C9 /* Icon@2x.png */,
+				0174C97F192D74F90089F8C9 /* iTunesArtwork.png */,
+				0174C980192D74F90089F8C9 /* iTunesArtwork@2x.png */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		0174C981192D74F90089F8C9 /* ios7 */ = {
+			isa = PBXGroup;
+			children = (
+				0174C982192D74F90089F8C9 /* Icon-40.png */,
+				0174C983192D74F90089F8C9 /* Icon-40@2x.png */,
+				0174C984192D74F90089F8C9 /* Icon-60.png */,
+				0174C985192D74F90089F8C9 /* Icon-60@2x.png */,
+				0174C986192D74F90089F8C9 /* Icon-72.png */,
+				0174C987192D74F90089F8C9 /* Icon-72@2x.png */,
+				0174C988192D74F90089F8C9 /* Icon-76.png */,
+				0174C989192D74F90089F8C9 /* Icon-76@2x.png */,
+				0174C98A192D74F90089F8C9 /* Icon-Small-50.png */,
+				0174C98B192D74F90089F8C9 /* Icon-Small-50@2x.png */,
+				0174C98C192D74F90089F8C9 /* Icon-Small.png */,
+				0174C98D192D74F90089F8C9 /* Icon-Small@2x.png */,
+				0174C98E192D74F90089F8C9 /* Icon.png */,
+				0174C98F192D74F90089F8C9 /* Icon@2x.png */,
+				0174C990192D74F90089F8C9 /* iTunesArtwork.png */,
+				0174C991192D74F90089F8C9 /* iTunesArtwork@2x.png */,
+			);
+			path = ios7;
+			sourceTree = "<group>";
+		};
+		01F3EC071A8100EF00EF3D4B /* Konashi */ = {
+			isa = PBXGroup;
+			children = (
+				01F3EC081A8100EF00EF3D4B /* Category */,
+				01F3EC1C1A8100EF00EF3D4B /* Constant */,
+				01F3EC1E1A8100EF00EF3D4B /* Impl */,
+				01F3EC271A8100EF00EF3D4B /* KNSHandlerManager.h */,
+				01F3EC281A8100EF00EF3D4B /* KNSHandlerManager.m */,
+				01F3EC291A8100EF00EF3D4B /* KNSPeripheral.h */,
+				01F3EC2A1A8100EF00EF3D4B /* KNSPeripheral.m */,
+				01F3EC2B1A8100EF00EF3D4B /* Konashi-Prefix.pch */,
+				01F3EC2C1A8100EF00EF3D4B /* Konashi.h */,
+				01F3EC2D1A8100EF00EF3D4B /* Konashi.m */,
+				01F3EC2E1A8100EF00EF3D4B /* KonashiUtils.h */,
+				01F3EC2F1A8100EF00EF3D4B /* KonashiUtils.m */,
 			);
 			path = Konashi;
 			sourceTree = "<group>";
 		};
-		01024F6618E5B98C00F2B416 /* SVProgressHUD */ = {
+		01F3EC081A8100EF00EF3D4B /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				01024F6718E5B98C00F2B416 /* SVProgressHUD.bundle */,
-				01024F6818E5B98C00F2B416 /* SVProgressHUD.h */,
-				01024F6918E5B98C00F2B416 /* SVProgressHUD.m */,
+				01F3EC091A8100EF00EF3D4B /* CoreBluetooth */,
+				01F3EC101A8100EF00EF3D4B /* Konashi */,
 			);
-			path = SVProgressHUD;
+			path = Category;
+			sourceTree = "<group>";
+		};
+		01F3EC091A8100EF00EF3D4B /* CoreBluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				01F3EC0A1A8100EF00EF3D4B /* CBPeripheral+Konashi.h */,
+				01F3EC0B1A8100EF00EF3D4B /* CBPeripheral+Konashi.m */,
+				01F3EC0C1A8100EF00EF3D4B /* CBService+Konashi.h */,
+				01F3EC0D1A8100EF00EF3D4B /* CBService+Konashi.m */,
+				01F3EC0E1A8100EF00EF3D4B /* CBUUID+Konashi.h */,
+				01F3EC0F1A8100EF00EF3D4B /* CBUUID+Konashi.m */,
+			);
+			path = CoreBluetooth;
+			sourceTree = "<group>";
+		};
+		01F3EC101A8100EF00EF3D4B /* Konashi */ = {
+			isa = PBXGroup;
+			children = (
+				01F3EC111A8100EF00EF3D4B /* Konashi+ACDrive.h */,
+				01F3EC121A8100EF00EF3D4B /* Konashi+ACDrive.m */,
+				01F3EC131A8100EF00EF3D4B /* Konashi+ADC.h */,
+				01F3EC141A8100EF00EF3D4B /* Konashi+ADC.m */,
+				01F3EC151A8100EF00EF3D4B /* Konashi+Grove.h */,
+				01F3EC161A8100EF00EF3D4B /* Konashi+Grove.m */,
+				01F3EC171A8100EF00EF3D4B /* Konashi+JavaScriptBindings.h */,
+				01F3EC181A8100EF00EF3D4B /* Konashi+JavaScriptBindings.m */,
+				01F3EC191A8100EF00EF3D4B /* Konashi+UI.h */,
+				01F3EC1A1A8100EF00EF3D4B /* Konashi+UI.m */,
+				01F3EC1B1A8100EF00EF3D4B /* KonashiJavaScriptBindingsProtocol.h */,
+			);
+			path = Konashi;
+			sourceTree = "<group>";
+		};
+		01F3EC1C1A8100EF00EF3D4B /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				01F3EC1D1A8100EF00EF3D4B /* KonashiConstant.h */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		01F3EC1E1A8100EF00EF3D4B /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				01F3EC1F1A8100EF00EF3D4B /* KNSKonashiPeripheralImpl.h */,
+				01F3EC201A8100EF00EF3D4B /* KNSKonashiPeripheralImpl.m */,
+				01F3EC211A8100EF00EF3D4B /* KNSKoshianPeripheralImpl.h */,
+				01F3EC221A8100EF00EF3D4B /* KNSKoshianPeripheralImpl.m */,
+				01F3EC231A8100EF00EF3D4B /* KNSPeripheralBaseImpl.h */,
+				01F3EC241A8100EF00EF3D4B /* KNSPeripheralBaseImpl.m */,
+				01F3EC251A8100EF00EF3D4B /* KNSPeripheralImplProtocol.h */,
+				01F3EC261A8100EF00EF3D4B /* KNSPeripheralImpls.h */,
+			);
+			path = Impl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,25 +552,50 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0174C99E192D74F90089F8C9 /* Icon.png in Resources */,
+				0174C9B1192D74F90089F8C9 /* iTunesArtwork@2x.png in Resources */,
 				0117C4F9192C31C0005E27D9 /* Fire_Alarm.mp3 in Resources */,
+				0174C9AE192D74F90089F8C9 /* Icon.png in Resources */,
 				01894EF718EE94FC00E72836 /* lgi01b201309250600.jpg in Resources */,
+				0174C9AB192D74F90089F8C9 /* Icon-Small-50@2x.png in Resources */,
 				01894EF918EE94FC00E72836 /* lgi01c201309250600.jpg in Resources */,
 				01894EEF18EE8A4900E72836 /* weather_ca_013.png in Resources */,
+				0174C9A6192D74F90089F8C9 /* Icon-72.png in Resources */,
 				01894EE518EE854A00E72836 /* weather_ca_007.png in Resources */,
-				01024F6A18E5B98C00F2B416 /* SVProgressHUD.bundle in Resources */,
+				0174C9A0192D74F90089F8C9 /* iTunesArtwork.png in Resources */,
+				0174C998192D74F90089F8C9 /* Icon-72.png in Resources */,
+				0174C9A3192D74F90089F8C9 /* Icon-40@2x.png in Resources */,
+				0174C9AF192D74F90089F8C9 /* Icon@2x.png in Resources */,
+				0174C9A4192D74F90089F8C9 /* Icon-60.png in Resources */,
 				01894EEE18EE8A4900E72836 /* weather_ca_011.png in Resources */,
+				0174C99F192D74F90089F8C9 /* Icon@2x.png in Resources */,
 				01F1287C18F62242005AAFD1 /* alert-146730_640.png in Resources */,
+				0174C9A8192D74F90089F8C9 /* Icon-76.png in Resources */,
 				01024F3418E4EF4B00F2B416 /* Images.xcassets in Resources */,
+				0174C9A7192D74F90089F8C9 /* Icon-72@2x.png in Resources */,
+				0174C9A1192D74F90089F8C9 /* iTunesArtwork@2x.png in Resources */,
 				01894EF318EE8B4300E72836 /* weather_ca_003.png in Resources */,
 				01894EED18EE8A4900E72836 /* weather_ca_009.png in Resources */,
+				0174C9A2192D74F90089F8C9 /* Icon-40.png in Resources */,
 				01894EF118EE8A4900E72836 /* weather_ca_015.png in Resources */,
+				0174C9AA192D74F90089F8C9 /* Icon-Small-50.png in Resources */,
+				0174C9AD192D74F90089F8C9 /* Icon-Small@2x.png in Resources */,
+				0174C99C192D74F90089F8C9 /* Icon-Small.png in Resources */,
+				0174C9A9192D74F90089F8C9 /* Icon-76@2x.png in Resources */,
 				01024F6F18E66BB700F2B416 /* Mpression-small.png in Resources */,
+				0174C9AC192D74F90089F8C9 /* Icon-Small.png in Resources */,
 				01024F2318E4EF4B00F2B416 /* InfoPlist.strings in Resources */,
+				0174C999192D74F90089F8C9 /* Icon-72@2x.png in Resources */,
+				0174C99D192D74F90089F8C9 /* Icon-Small@2x.png in Resources */,
+				0174C9A5192D74F90089F8C9 /* Icon-60@2x.png in Resources */,
 				01894E4F18E7724700E72836 /* header_logo.png in Resources */,
 				01894EEC18EE8A4900E72836 /* weather_ca_001.png in Resources */,
 				01894E5118EA949300E72836 /* SiLabsLogo.png in Resources */,
 				017FC1B618EECB47008A616B /* weather_ca_005.png in Resources */,
 				01894EF818EE94FC00E72836 /* lgi01a201309250600.jpg in Resources */,
+				0174C9B0192D74F90089F8C9 /* iTunesArtwork.png in Resources */,
+				0174C99B192D74F90089F8C9 /* Icon-Small-50@2x.png in Resources */,
+				0174C99A192D74F90089F8C9 /* Icon-Small-50.png in Resources */,
 				01024F2C18E4EF4B00F2B416 /* Main.storyboard in Resources */,
 				01894EF018EE8A4900E72836 /* weather_ca_017.png in Resources */,
 			);
@@ -381,12 +617,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				01024F3218E4EF4B00F2B416 /* SecondViewController.m in Sources */,
+				01F3EC321A8100EF00EF3D4B /* CBUUID+Konashi.m in Sources */,
+				01F3EC3C1A8100EF00EF3D4B /* KNSPeripheral.m in Sources */,
+				01F3EC361A8100EF00EF3D4B /* Konashi+JavaScriptBindings.m in Sources */,
 				01024F2918E4EF4B00F2B416 /* AppDelegate.m in Sources */,
+				01F3EC301A8100EF00EF3D4B /* CBPeripheral+Konashi.m in Sources */,
+				01F3EC371A8100EF00EF3D4B /* Konashi+UI.m in Sources */,
+				01F3EC341A8100EF00EF3D4B /* Konashi+ADC.m in Sources */,
+				01F3EC311A8100EF00EF3D4B /* CBService+Konashi.m in Sources */,
+				01F3EC3B1A8100EF00EF3D4B /* KNSHandlerManager.m in Sources */,
 				01024F2F18E4EF4B00F2B416 /* FirstViewController.m in Sources */,
 				01024F2518E4EF4B00F2B416 /* main.m in Sources */,
+				0174C968192CAFFA0089F8C9 /* Bluetooth.m in Sources */,
 				01F1288818F6683F005AAFD1 /* Adxl345.m in Sources */,
-				01024F6518E5B5E700F2B416 /* Konashi.m in Sources */,
-				01024F6B18E5B98C00F2B416 /* SVProgressHUD.m in Sources */,
+				01F3EC391A8100EF00EF3D4B /* KNSKoshianPeripheralImpl.m in Sources */,
+				01F3EC381A8100EF00EF3D4B /* KNSKonashiPeripheralImpl.m in Sources */,
+				01F3EC331A8100EF00EF3D4B /* Konashi+ACDrive.m in Sources */,
+				01F3EC3D1A8100EF00EF3D4B /* Konashi.m in Sources */,
+				01F3EC3E1A8100EF00EF3D4B /* KonashiUtils.m in Sources */,
+				01F3EC351A8100EF00EF3D4B /* Konashi+Grove.m in Sources */,
+				01F3EC3A1A8100EF00EF3D4B /* KNSPeripheralBaseImpl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

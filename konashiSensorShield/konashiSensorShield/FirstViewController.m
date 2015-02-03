@@ -8,9 +8,12 @@
 
 #import "FirstViewController.h"
 #import "Konashi.h"
+#import "konashiInterface.h"
 
 
 @interface FirstViewController ()
+
+@property (strong, nonatomic) Bluetooth *ble;   //KONASHI接続オブジェクト
 
 @end
 
@@ -31,6 +34,10 @@ double dcindex;
 	// Do any additional setup after loading the view, typically from a nib.
     _stopAlarm.hidden = true;
     [Konashi initialize];
+    //_ble = [[Bluetooth alloc] init];
+    //[_ble autoFind];
+    //[self startCheckSensor];
+    
 }
 
 - (void)didReceiveMemoryWarning

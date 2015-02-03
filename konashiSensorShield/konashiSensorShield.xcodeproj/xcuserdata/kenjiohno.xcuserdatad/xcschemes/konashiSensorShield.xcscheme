@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0510"
+   LastUpgradeVersion = "0610"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -17,6 +17,20 @@
                BlueprintIdentifier = "01024F1418E4EF4B00F2B416"
                BuildableName = "konashiSensorShield.app"
                BlueprintName = "konashiSensorShield"
+               ReferencedContainer = "container:konashiSensorShield.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "01024F3818E4EF4B00F2B416"
+               BuildableName = "konashiSensorShieldTests.xctest"
+               BlueprintName = "konashiSensorShieldTests"
                ReferencedContainer = "container:konashiSensorShield.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

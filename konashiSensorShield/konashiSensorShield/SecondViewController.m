@@ -94,6 +94,7 @@
 
 #import "SecondViewController.h"
 #import "Konashi.h"
+#import "konashiInterface.h"
 
 @interface SecondViewController ()
 
