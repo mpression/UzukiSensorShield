@@ -1,7 +1,6 @@
 # Uzuki0.2
 
-# Uzuki-
-# IoT Sensor Shield for Konashi & Arduino
+Uzuki-IoT Sensor Shield for Konashi & Arduino
 ![](http://www.m-pression.com/image/image_gallery?uuid=2c604bd7-a94c-410a-84ec-3b17d5175fa2&groupId=10157&t=1417437915653)
 
 Uzuki - IoT Sensor Shield for Konashi & Arduino は、ユカイ工学株式会社が開発したiPhone/iPadのためのフィジカル・コンピューティングツールキット Konashi(こなし)にI2Cで接続できる、マクニカが開発したIoTセンサーシールドです。Uzukiは、Konashiだけでなく、ArduinoのシールドとしてもI2Cで接続することができます。
