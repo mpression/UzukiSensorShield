@@ -1,4 +1,4 @@
-# Uzuki0.2
+# Uzuki0.2 サンプコード
 
 ## Uzuki-IoT Sensor Shield for Konashi & Arduino
 ![](http://www.m-pression.com/image/image_gallery?uuid=2c604bd7-a94c-410a-84ec-3b17d5175fa2&groupId=10157&t=1417437915653)
