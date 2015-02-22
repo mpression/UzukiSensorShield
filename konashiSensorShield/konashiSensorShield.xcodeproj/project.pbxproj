@@ -86,6 +86,8 @@
 		01F3EC3C1A8100EF00EF3D4B /* KNSPeripheral.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F3EC2A1A8100EF00EF3D4B /* KNSPeripheral.m */; };
 		01F3EC3D1A8100EF00EF3D4B /* Konashi.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F3EC2D1A8100EF00EF3D4B /* Konashi.m */; };
 		01F3EC3E1A8100EF00EF3D4B /* KonashiUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F3EC2F1A8100EF00EF3D4B /* KonashiUtils.m */; };
+		01F9C11D1A99961900D4EAB4 /* Si114x.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F9C11C1A99961900D4EAB4 /* Si114x.m */; };
+		01F9C1201A999FB600D4EAB4 /* Si7013.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F9C11F1A999FB600D4EAB4 /* Si7013.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -170,8 +172,8 @@
 		01AF611A18E6B91700DF534D /* si114x_defs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = si114x_defs.h; path = konashiSensorShield/si114x_defs.h; sourceTree = "<group>"; };
 		01D9BE3E192B995000E96860 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		01F1287B18F62242005AAFD1 /* alert-146730_640.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "alert-146730_640.png"; path = "konashiSensorShield/alert-146730_640.png"; sourceTree = "<group>"; };
-		01F1288618F6683F005AAFD1 /* Adxl345.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Adxl345.h; path = Sensors/Adxl345.h; sourceTree = "<group>"; };
-		01F1288718F6683F005AAFD1 /* Adxl345.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Adxl345.m; path = Sensors/Adxl345.m; sourceTree = "<group>"; };
+		01F1288618F6683F005AAFD1 /* Adxl345.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Adxl345.h; path = ../Sensors/Adxl345.h; sourceTree = "<group>"; };
+		01F1288718F6683F005AAFD1 /* Adxl345.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Adxl345.m; path = ../Sensors/Adxl345.m; sourceTree = "<group>"; };
 		01F3EC0A1A8100EF00EF3D4B /* CBPeripheral+Konashi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBPeripheral+Konashi.h"; sourceTree = "<group>"; };
 		01F3EC0B1A8100EF00EF3D4B /* CBPeripheral+Konashi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBPeripheral+Konashi.m"; sourceTree = "<group>"; };
 		01F3EC0C1A8100EF00EF3D4B /* CBService+Konashi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBService+Konashi.h"; sourceTree = "<group>"; };
@@ -208,6 +210,10 @@
 		01F3EC2E1A8100EF00EF3D4B /* KonashiUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KonashiUtils.h; sourceTree = "<group>"; };
 		01F3EC2F1A8100EF00EF3D4B /* KonashiUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KonashiUtils.m; sourceTree = "<group>"; };
 		01F9C11A1A996F5400D4EAB4 /* konashiInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = konashiInterface.h; sourceTree = "<group>"; };
+		01F9C11B1A9995F100D4EAB4 /* Si114x.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Si114x.h; path = ../Sensors/Si114x.h; sourceTree = "<group>"; };
+		01F9C11C1A99961900D4EAB4 /* Si114x.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Si114x.m; path = ../Si114x.m; sourceTree = "<group>"; };
+		01F9C11E1A999F9E00D4EAB4 /* Si7013.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Si7013.h; sourceTree = "<group>"; };
+		01F9C11F1A999FB600D4EAB4 /* Si7013.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Si7013.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,8 +251,6 @@
 				01F3EC071A8100EF00EF3D4B /* Konashi */,
 				0174C969192D74F90089F8C9 /* icon */,
 				0117C4F8192C31C0005E27D9 /* Fire_Alarm.mp3 */,
-				01F1288618F6683F005AAFD1 /* Adxl345.h */,
-				01F1288718F6683F005AAFD1 /* Adxl345.m */,
 				01894EF418EE94FC00E72836 /* lgi01b201309250600.jpg */,
 				01894EF518EE94FC00E72836 /* lgi01a201309250600.jpg */,
 				01894EF618EE94FC00E72836 /* lgi01c201309250600.jpg */,
@@ -298,6 +302,12 @@
 		01024F1E18E4EF4B00F2B416 /* konashiSensorShield */ = {
 			isa = PBXGroup;
 			children = (
+				01F1288618F6683F005AAFD1 /* Adxl345.h */,
+				01F1288718F6683F005AAFD1 /* Adxl345.m */,
+				01F9C11B1A9995F100D4EAB4 /* Si114x.h */,
+				01F9C11C1A99961900D4EAB4 /* Si114x.m */,
+				01F9C11E1A999F9E00D4EAB4 /* Si7013.h */,
+				01F9C11F1A999FB600D4EAB4 /* Si7013.m */,
 				01024F2718E4EF4B00F2B416 /* AppDelegate.h */,
 				01024F2818E4EF4B00F2B416 /* AppDelegate.m */,
 				01024F2A18E4EF4B00F2B416 /* Main.storyboard */,
@@ -621,6 +631,7 @@
 				01F3EC3C1A8100EF00EF3D4B /* KNSPeripheral.m in Sources */,
 				01F3EC361A8100EF00EF3D4B /* Konashi+JavaScriptBindings.m in Sources */,
 				01024F2918E4EF4B00F2B416 /* AppDelegate.m in Sources */,
+				01F9C1201A999FB600D4EAB4 /* Si7013.m in Sources */,
 				01F3EC301A8100EF00EF3D4B /* CBPeripheral+Konashi.m in Sources */,
 				01F3EC371A8100EF00EF3D4B /* Konashi+UI.m in Sources */,
 				01F3EC341A8100EF00EF3D4B /* Konashi+ADC.m in Sources */,
@@ -635,6 +646,7 @@
 				01F3EC331A8100EF00EF3D4B /* Konashi+ACDrive.m in Sources */,
 				01F3EC3D1A8100EF00EF3D4B /* Konashi.m in Sources */,
 				01F3EC3E1A8100EF00EF3D4B /* KonashiUtils.m in Sources */,
+				01F9C11D1A99961900D4EAB4 /* Si114x.m in Sources */,
 				01F3EC351A8100EF00EF3D4B /* Konashi+Grove.m in Sources */,
 				01F3EC3A1A8100EF00EF3D4B /* KNSPeripheralBaseImpl.m in Sources */,
 			);

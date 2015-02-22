@@ -9,6 +9,9 @@
 #import "FirstViewController.h"
 #import "Konashi.h"
 #import "konashiInterface.h"
+#import "Adxl345.h"
+#import "Si114x.h"
+#import "Si7013.h"
 
 
 @interface FirstViewController ()
@@ -92,7 +95,6 @@ double dcindex;
 - (void)konashiIsReady
 {
     [Konashi removeObserver:self];
-    
     [_devicePairingButton setTitle:@"Disconnect" forState:UIControlStateNormal];
 
     
@@ -108,7 +110,7 @@ double dcindex;
     [NSThread sleepForTimeInterval:0.1];
     [Konashi digitalWrite:PIO2 value:LOW];
     [Konashi digitalWrite:PIO3 value:HIGH];
-    [NSThread sleepForTimeInterval:0.2];
+    [NSThread sleepForTimeInterval:0.1];
     [Konashi digitalWrite:PIO3 value:LOW];
     [Konashi digitalWrite:PIO4 value:HIGH];
     [NSThread sleepForTimeInterval:0.2];
@@ -119,75 +121,18 @@ double dcindex;
 
 #pragma mark - Konashi Input Control
 
+//***********************************************************
+// Initialize Sensors
+//***********************************************************
+
 - (void)startCheckSensor
 {
-    unsigned char data[2];
     NSLog(@"Start check sensor.");
-    
-    //***********************************************************
-    // Si114x Ambient Light / UV Index / Proximity Sensor Setting
-    //***********************************************************
-    
-    //initialize: wait for 25ms or more.
-    [NSThread sleepForTimeInterval:0.1];
-    
-    // HW_KEYレジスタに0x17をWR　→オペレーション開始
-    [Konashi i2cStartCondition];
-    data[0] = REG_HW_KEY;
-    data[1] = REG_HW_KEY_VALUE;
-    [Konashi i2cWrite:2 data:data address:PROX_LIGHT_UV_SENSOR_ADDRESS];
-    [Konashi i2cStopCondition];
-    
-    // REG_COEF0-3レジスタにSiLabs指定の補正値をWR
-    [Konashi i2cStartCondition];
-    data[0] = REG_COEF0;
-    data[1] = REG_COEF0_VALUE;
-    [Konashi i2cWrite:2 data:data address:PROX_LIGHT_UV_SENSOR_ADDRESS];
-    [Konashi i2cStopCondition];
-    
-    [Konashi i2cStartCondition];
-    data[0] = REG_COEF1;
-    data[1] = REG_COEF1_VALUE;
-    [Konashi i2cWrite:2 data:data address:PROX_LIGHT_UV_SENSOR_ADDRESS];
-    [Konashi i2cStopCondition];
 
+    [Si114x initialize];
+    [Adxl345 initialize];
+    [Si7013 initialize];
 
-    [Konashi i2cStartCondition];
-    data[0] = REG_COEF2;
-    data[1] = REG_COEF2_VALUE;
-    [Konashi i2cWrite:2 data:data address:PROX_LIGHT_UV_SENSOR_ADDRESS];
-    [Konashi i2cStopCondition];
-
-    [Konashi i2cStartCondition];
-    data[0] = REG_COEF3;
-    data[1] = REG_COEF3_VALUE;
-    [Konashi i2cWrite:2 data:data address:PROX_LIGHT_UV_SENSOR_ADDRESS];
-    [Konashi i2cStopCondition];
-    
-    //*****************************************************
-    // Si7013 Temperature / Related Humidity Sensor Setting
-    //*****************************************************
-    
-    [Konashi i2cStartCondition];
-    data[0] = REG_PARAM_WR; //パラメータレジスタに書き込む値をセットするレジスタ
-    data[1] = EN_UV | EN_ALS_IR | EN_ALS_VIS; //パラメータレジスタに書き込む値
-    [Konashi i2cWrite:2 data:data address:PROX_LIGHT_UV_SENSOR_ADDRESS];
-    [Konashi i2cStopCondition];
-    
-    [Konashi i2cStartCondition];
-    data[0] = REG_COMMAND;
-    data[1] = 0xA0 | PARAM_CH_LIST; // 0xA0 is the PARAM_SET cmd.
-    [Konashi i2cWrite:2 data:data address:PROX_LIGHT_UV_SENSOR_ADDRESS];
-    [Konashi i2cStopCondition];
-    
-    //*****************************************************
-    // ADXL345 Accelerometer Setting
-    //*****************************************************
-    
-    // No specific
-    
-    
-    //initialize
     //Sensor Event Handler
     [Konashi addObserver:self selector:@selector(readSensor) name:KONASHI_EVENT_I2C_READ_COMPLETE];
     checkSensorTimer = [NSTimer scheduledTimerWithTimeInterval:CHECK_SENSOR_INTERVAL
@@ -197,13 +142,18 @@ double dcindex;
                                                        repeats:YES];
 }
 
+//***********************************************************
+// Initialize Sensors
+//***********************************************************
 - (void)stopCheckSensor
 {
     [Konashi removeObserver:self];
     if([checkSensorTimer isValid]) [checkSensorTimer invalidate];
 }
 
-//TODO: to check the Relative Humidity Sensor and the Temperature Sensor on the I2C bus.
+//***********************************************************
+// Sensor Conversion
+//***********************************************************
 - (void)checkSensor:(NSTimer *)timer
 {
     unsigned char data[2];
@@ -211,95 +161,19 @@ double dcindex;
     switch (count){
             
         case 0:
-            // Sequence to Start a Relative Humidity Conversion
-            [Konashi i2cStartCondition];
-            data[0] = 0xE5;
-            [Konashi i2cWrite:1 data:data address:HUMID_TEMP_SENSOR_ADDRESS];
-            [Konashi i2cRestartCondition];
-            [Konashi i2cReadRequest:3 address:HUMID_TEMP_SENSOR_ADDRESS];
-            [NSThread sleepForTimeInterval:I2C_WAIT_INTERVAL_500ms];
+            [Si7013 checkHumidity];
             break;
             
         case 1:
-            // Sequence to Start a Temperature Conversion
-            [Konashi i2cStartCondition];
-            data[0] = 0xE0;
-            [Konashi i2cWrite:1 data:data address:HUMID_TEMP_SENSOR_ADDRESS];
-            [Konashi i2cRestartCondition];
-            [Konashi i2cReadRequest:3 address:HUMID_TEMP_SENSOR_ADDRESS];
-            [NSThread sleepForTimeInterval:I2C_WAIT_INTERVAL_500ms];
+            [Si7013 checkTemperature];
             break;
             
         case 2:
-            // Sequence to Start a Ambient Light Conversion
-            [Konashi i2cStartCondition];
-            data[0] = REG_COMMAND;
-            data[1] = ALS_FORCE; // Enter ALS Force Mode.
-            //data[1] = ALS_AUTO;   // Enter ALS Autonomous Mode.
-            [Konashi i2cWrite:2 data:data address:PROX_LIGHT_UV_SENSOR_ADDRESS];
-            [Konashi i2cStopCondition];
-            
-            [Konashi i2cStartCondition];
-            //data[0] = 0x00; // Part ID : 0x45 for Si1145
-            //data[0] = REG_UVI_DATA0;
-            data[0] = REG_ALS_VIS_DATA0;
-            [Konashi i2cWrite:1 data:data address:PROX_LIGHT_UV_SENSOR_ADDRESS];
-            [Konashi i2cRestartCondition];
-            [Konashi i2cReadRequest:2 address:PROX_LIGHT_UV_SENSOR_ADDRESS];
-            [NSThread sleepForTimeInterval:I2C_WAIT_INTERVAL_500ms];
+            [Si114x chkAmbientLight];
             break;
             
         case 3:
-            // Sequence to Start a Accerelometer Conversion
-            
-            [Konashi i2cStartCondition];
-            data[0] = 0x31; // DATA FORMAT REGISTER
-            data[1] = 0x0B; // Set Full Resolution, +/- 16g
-            [Konashi i2cWrite:2 data:data address:ACC_SENSOR_ADDRESS];
-            [Konashi i2cStopCondition];
- 
-            [Konashi i2cStartCondition];
-            data[0] = 0x2D; // POWER CONTROL REGISTER
-            data[1] = 0x08; // Set to Measure Mode
-            [Konashi i2cWrite:2 data:data address:ACC_SENSOR_ADDRESS];
-            [Konashi i2cStopCondition];
-            
-            [Konashi i2cStartCondition];
-            data[0] = 0x24; // THRESHOLD ACTIVE : 6.25mg/LSB
-            data[1] = 0x20; // 2.0g
-            //data[1] = 0x10;   // 1.0g
-            //data[1] = 0x08;   // 0.5g
-            [Konashi i2cWrite:2 data:data address:ACC_SENSOR_ADDRESS];
-            [Konashi i2cStopCondition];
-            [NSThread sleepForTimeInterval:I2C_WAIT_INTERVAL];
-
-            [Konashi i2cStartCondition];
-            data[0] = 0x27; // ACTIVE/INACTIVE CONTROL REGISTER
-            data[1] = 0xF0; // D7 : 1 : Act AC Coupling
-            // D6 : 1 : Act_X Enable
-            // D5 : 1 : Act_Y Enable
-            // D4 : 1 : Act_Z Enable
-            // D3 : 0 : Inact DC Coupling
-            // D2 : 0 : Inact_X Disable
-            // D1 : 0 : Inact_Y Disable
-            // D0 : 0 : Inact_Z Disable
-            [Konashi i2cWrite:2 data:data address:ACC_SENSOR_ADDRESS];
-            [Konashi i2cStopCondition];
-            
-            [Konashi i2cStartCondition];
-            data[0] = 0x2E; // Int Enable
-            data[1] = 0x10; // Enable only Activity
-            [Konashi i2cWrite:2 data:data address:ACC_SENSOR_ADDRESS];
-            [Konashi i2cStopCondition];
-            
-            [Konashi i2cStartCondition];
-            data[0] = 0x30; // Int Source Register
-            //data[0] = 0x32; // data_x lo
-            [Konashi i2cWrite:1 data:data address:ACC_SENSOR_ADDRESS];
-            [Konashi i2cRestartCondition];
-            
-            [Konashi i2cReadRequest:1 address:ACC_SENSOR_ADDRESS];
-            [NSThread sleepForTimeInterval:I2C_WAIT_INTERVAL_500ms];
+            [Adxl345 chkThreshold];
             
     }
 }
@@ -309,8 +183,9 @@ double dcindex;
     unsigned char data[3];
     
     switch (count){
-        case 0:
-            // Read RH
+            
+        case 0: // Read Related Humidity
+            
             [Konashi i2cRead:3 data:data];
             [Konashi i2cStopCondition];
             
@@ -327,8 +202,8 @@ double dcindex;
             count++;
             break;
     
-        case 1:
-            // Read Temp.
+        case 1: // Read Temperature
+            
             [Konashi i2cRead:3 data:data];
             [Konashi i2cStopCondition];
             
@@ -389,7 +264,8 @@ double dcindex;
             count++;
             break;
             
-        case 2:
+        case 2: // Read Ambient Light
+            
             [Konashi i2cRead:2 data:data];
             
             NSLog(@"UVI_HL:%X,%X", data[1], data[0]);

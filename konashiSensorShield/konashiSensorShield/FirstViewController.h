@@ -26,10 +26,6 @@
 #import "si114x_defs.h"
 #import "Bluetooth.h"
 
-#define CHECK_SENSOR_INTERVAL           0.1001f
-#define I2C_WAIT_INTERVAL               0.1
-//#define I2C_WAIT_INTERVAL_500m          0.5
-
 #define PROX_LIGHT_UV_SENSOR_ADDRESS    0x60 //Si1045
 
 #define I2C_GLOBAL_ADDRESS              0x00
