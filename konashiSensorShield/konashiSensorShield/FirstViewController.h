@@ -26,6 +26,9 @@
 #import "si114x_defs.h"
 #import "Bluetooth.h"
 
+#define CHECK_SENSOR_INTERVAL   0.05f
+
+
 @interface FirstViewController : UIViewController
 {
     CFURLRef soundURL;

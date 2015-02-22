@@ -12,7 +12,7 @@
 #ifndef konashiSensorShield_Si114x_h
 #define konashiSensorShield_Si114x_h
 
-#define I2C_WAIT_INTERVAL         0.3
+#define I2C_WAIT_INTERVAL         0.1
 
 #define PROX_LIGHT_UV_SENSOR_ADDRESS    0x60 //Si1045
 

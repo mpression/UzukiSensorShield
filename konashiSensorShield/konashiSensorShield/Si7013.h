@@ -12,9 +12,7 @@
 #ifndef konashiSensorShield_Si7013_h
 #define konashiSensorShield_Si7013_h
 
-#define I2C_WAIT_INTERVAL         0.3
-
-#define CHECK_SENSOR_INTERVAL           0.1
+#define I2C_WAIT_INTERVAL         0.1
 
 #define HUMID_TEMP_SENSOR_ADDRESS       0x40 //Si7013
 

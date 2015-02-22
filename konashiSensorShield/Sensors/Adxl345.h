@@ -9,9 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "Konashi.h"
 
-#define CHECK_SENSOR_INTERVAL           0.1001f
-
-#define I2C_WAIT_INTERVAL         0.3
+#define I2C_WAIT_INTERVAL         0.1
 
 #define I2C_GLOBAL_ADDRESS              0x00
 #define I2C_GLOBAL_RESET_CMD            0x06

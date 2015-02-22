@@ -14,6 +14,7 @@
 #import "Si7013.h"
 
 
+
 @interface FirstViewController ()
 
 @property (strong, nonatomic) Bluetooth *ble;   //KONASHI接続オブジェクト
