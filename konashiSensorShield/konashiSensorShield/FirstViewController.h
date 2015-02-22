@@ -26,7 +26,7 @@
 #import "si114x_defs.h"
 #import "Bluetooth.h"
 
-#define CHECK_SENSOR_INTERVAL   0.05f
+#define CHECK_SENSOR_INTERVAL   0.1f
 
 
 @interface FirstViewController : UIViewController

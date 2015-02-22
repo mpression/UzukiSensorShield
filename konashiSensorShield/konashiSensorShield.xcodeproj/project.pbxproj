@@ -15,7 +15,6 @@
 		01024F2918E4EF4B00F2B416 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01024F2818E4EF4B00F2B416 /* AppDelegate.m */; };
 		01024F2C18E4EF4B00F2B416 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01024F2A18E4EF4B00F2B416 /* Main.storyboard */; };
 		01024F2F18E4EF4B00F2B416 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01024F2E18E4EF4B00F2B416 /* FirstViewController.m */; };
-		01024F3218E4EF4B00F2B416 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01024F3118E4EF4B00F2B416 /* SecondViewController.m */; };
 		01024F3418E4EF4B00F2B416 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01024F3318E4EF4B00F2B416 /* Images.xcassets */; };
 		01024F3B18E4EF4B00F2B416 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01024F3A18E4EF4B00F2B416 /* XCTest.framework */; };
 		01024F3C18E4EF4B00F2B416 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01024F1818E4EF4B00F2B416 /* Foundation.framework */; };
@@ -115,8 +114,6 @@
 		01024F2B18E4EF4B00F2B416 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		01024F2D18E4EF4B00F2B416 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		01024F2E18E4EF4B00F2B416 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		01024F3018E4EF4B00F2B416 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		01024F3118E4EF4B00F2B416 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		01024F3318E4EF4B00F2B416 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		01024F3918E4EF4B00F2B416 /* konashiSensorShieldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = konashiSensorShieldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01024F3A18E4EF4B00F2B416 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -171,6 +168,7 @@
 		01894EF518EE94FC00E72836 /* lgi01a201309250600.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lgi01a201309250600.jpg; sourceTree = "<group>"; };
 		01894EF618EE94FC00E72836 /* lgi01c201309250600.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lgi01c201309250600.jpg; sourceTree = "<group>"; };
 		01B591FC1A99B86200D7F077 /* mpression4MAKERS_Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mpression4MAKERS_Small.png; path = "../../../Dropbox/Makers/全マニュアル他ドキュメント/mpression/mpression4MAKERS_Small.png"; sourceTree = "<group>"; };
+		01B591FE1A99D28400D7F077 /* konashiInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = konashiInterface.h; sourceTree = SOURCE_ROOT; };
 		01D9BE3E192B995000E96860 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		01F1287B18F62242005AAFD1 /* alert-146730_640.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "alert-146730_640.png"; path = "konashiSensorShield/alert-146730_640.png"; sourceTree = "<group>"; };
 		01F1288618F6683F005AAFD1 /* Adxl345.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Adxl345.h; path = ../Sensors/Adxl345.h; sourceTree = "<group>"; };
@@ -210,7 +208,6 @@
 		01F3EC2D1A8100EF00EF3D4B /* Konashi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Konashi.m; sourceTree = "<group>"; };
 		01F3EC2E1A8100EF00EF3D4B /* KonashiUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KonashiUtils.h; sourceTree = "<group>"; };
 		01F3EC2F1A8100EF00EF3D4B /* KonashiUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KonashiUtils.m; sourceTree = "<group>"; };
-		01F9C11A1A996F5400D4EAB4 /* konashiInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = konashiInterface.h; sourceTree = "<group>"; };
 		01F9C11B1A9995F100D4EAB4 /* Si114x.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Si114x.h; path = ../Sensors/Si114x.h; sourceTree = "<group>"; };
 		01F9C11C1A99961900D4EAB4 /* Si114x.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Si114x.m; path = ../Si114x.m; sourceTree = "<group>"; };
 		01F9C11E1A999F9E00D4EAB4 /* Si7013.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Si7013.h; sourceTree = "<group>"; };
@@ -248,7 +245,6 @@
 		01024F0C18E4EF4B00F2B416 = {
 			isa = PBXGroup;
 			children = (
-				01F9C11A1A996F5400D4EAB4 /* konashiInterface.h */,
 				01F3EC071A8100EF00EF3D4B /* Konashi */,
 				0174C969192D74F90089F8C9 /* icon */,
 				0117C4F8192C31C0005E27D9 /* Fire_Alarm.mp3 */,
@@ -313,11 +309,10 @@
 				01024F2818E4EF4B00F2B416 /* AppDelegate.m */,
 				01024F2A18E4EF4B00F2B416 /* Main.storyboard */,
 				01024F2D18E4EF4B00F2B416 /* FirstViewController.h */,
+				01B591FE1A99D28400D7F077 /* konashiInterface.h */,
 				01024F2E18E4EF4B00F2B416 /* FirstViewController.m */,
 				0174C966192CAFFA0089F8C9 /* Bluetooth.h */,
 				0174C967192CAFFA0089F8C9 /* Bluetooth.m */,
-				01024F3018E4EF4B00F2B416 /* SecondViewController.h */,
-				01024F3118E4EF4B00F2B416 /* SecondViewController.m */,
 				01024F3318E4EF4B00F2B416 /* Images.xcassets */,
 				01024F1F18E4EF4B00F2B416 /* Supporting Files */,
 			);
@@ -628,7 +623,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01024F3218E4EF4B00F2B416 /* SecondViewController.m in Sources */,
 				01F3EC321A8100EF00EF3D4B /* CBUUID+Konashi.m in Sources */,
 				01F3EC3C1A8100EF00EF3D4B /* KNSPeripheral.m in Sources */,
 				01F3EC361A8100EF00EF3D4B /* Konashi+JavaScriptBindings.m in Sources */,
