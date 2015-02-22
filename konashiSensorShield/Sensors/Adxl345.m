@@ -53,7 +53,7 @@
 
 + (void) chkThreshold{
     
-unsigned char data[2];
+    unsigned char data[2];
     [Konashi i2cStartCondition];
     data[0] = 0x2E; // Int Enable
     data[1] = 0x10; // Enable only Activity
@@ -67,7 +67,21 @@ unsigned char data[2];
     [Konashi i2cRestartCondition];
     
     [Konashi i2cReadRequest:1 address:ACC_SENSOR_ADDRESS];
-    [NSThread sleepForTimeInterval:I2C_WAIT_INTERVAL_500ms];
+    [NSThread sleepForTimeInterval:I2C_WAIT_INTERVAL];
+}
+
++ (void) chkAcceleration{
+    
+    unsigned char data[6];
+    [Konashi i2cStartCondition];
+    data[0] = 0x32; // data_x lo
+    [Konashi i2cWrite:1 data:data address:ACC_SENSOR_ADDRESS];
+    [Konashi i2cRestartCondition];
+    
+    //read Acceleration 3-Axis
+    [Konashi i2cReadRequest:6 address:ACC_SENSOR_ADDRESS];
+    [NSThread sleepForTimeInterval:I2C_WAIT_INTERVAL];
+    
 }
 
 @end

@@ -86,7 +86,7 @@
     [Konashi i2cWrite:1 data:data address:PROX_LIGHT_UV_SENSOR_ADDRESS];
     [Konashi i2cRestartCondition];
     [Konashi i2cReadRequest:2 address:PROX_LIGHT_UV_SENSOR_ADDRESS];
-    [NSThread sleepForTimeInterval:I2C_WAIT_INTERVAL_500ms];
+    [NSThread sleepForTimeInterval:I2C_WAIT_INTERVAL];
 }
 
 @end

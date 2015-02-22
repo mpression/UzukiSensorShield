@@ -173,14 +173,14 @@ double dcindex;
             break;
             
         case 3:
-            [Adxl345 chkThreshold];
+            [Adxl345 chkAcceleration];
             
     }
 }
 
 - (void)readSensor // Read RH & Temperature
 {
-    unsigned char data[3];
+    unsigned char data[7];
     
     switch (count){
             
@@ -303,6 +303,7 @@ double dcindex;
             break;
             
         case 3:
+            /*
             [Konashi i2cRead:1 data:data];
             
             NSLog(@"SHOCKED:%X", data[0]);
@@ -312,7 +313,7 @@ double dcindex;
             if (data[0]== 0x93){
 
                 _stopAlarm.hidden = false;
-                _weatherImage.hidden = true;
+                //_weatherImage.hidden = true;
                 
                 CFBundleRef mainBundle;
                 mainBundle = CFBundleGetMainBundle();
@@ -320,13 +321,24 @@ double dcindex;
                 AudioServicesCreateSystemSoundID(soundURL, &soundID);
                 CFRelease(soundURL);
                 AudioServicesPlaySystemSound(soundID);
-                
-            }
+             
+             */
+            
+            // Read Acceleration xyz-Axis
+            [Konashi i2cRead:6 data:data];
+            
+            double ax =  (double)(((signed short) ((unsigned short)data[1]<<8 ^ data[0]))) / 256.0;//16384.0;
+            double ay =  (double)(((signed short) ((unsigned short)data[3]<<8 ^ data[2]))) / 256.0;//16384.0;
+            double az =  (double)(((signed short) ((unsigned short)data[5]<<8 ^ data[4]))) / 256.0;//16384.0;
+            
+            _ax.text = [NSString stringWithFormat:@"%f", ax];
+            _ay.text = [NSString stringWithFormat:@"%f", ay];
+            _az.text = [NSString stringWithFormat:@"%f", az];
 
-
+            float value = sqrt(ax * ax + ay * ay + az * az);
 
             count=0;
-            break;
+
     }
 }
 @end

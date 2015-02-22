@@ -20,7 +20,7 @@
     [Konashi i2cWrite:1 data:data address:HUMID_TEMP_SENSOR_ADDRESS];
     [Konashi i2cRestartCondition];
     [Konashi i2cReadRequest:3 address:HUMID_TEMP_SENSOR_ADDRESS];
-    [NSThread sleepForTimeInterval:I2C_WAIT_INTERVAL_500ms];
+    [NSThread sleepForTimeInterval:I2C_WAIT_INTERVAL];
     
 }
 
@@ -32,7 +32,7 @@
     [Konashi i2cWrite:1 data:data address:HUMID_TEMP_SENSOR_ADDRESS];
     [Konashi i2cRestartCondition];
     [Konashi i2cReadRequest:3 address:HUMID_TEMP_SENSOR_ADDRESS];
-    [NSThread sleepForTimeInterval:I2C_WAIT_INTERVAL_500ms];
+    [NSThread sleepForTimeInterval:I2C_WAIT_INTERVAL];
     
 }
 
