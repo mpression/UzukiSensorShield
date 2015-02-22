@@ -207,7 +207,7 @@
 		01F3EC2D1A8100EF00EF3D4B /* Konashi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Konashi.m; sourceTree = "<group>"; };
 		01F3EC2E1A8100EF00EF3D4B /* KonashiUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KonashiUtils.h; sourceTree = "<group>"; };
 		01F3EC2F1A8100EF00EF3D4B /* KonashiUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KonashiUtils.m; sourceTree = "<group>"; };
-		01F3EC3F1A81015100EF3D4B /* konashiInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = konashiInterface.h; path = ../konashiInterface.h; sourceTree = "<group>"; };
+		01F9C11A1A996F5400D4EAB4 /* konashiInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = konashiInterface.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +241,7 @@
 		01024F0C18E4EF4B00F2B416 = {
 			isa = PBXGroup;
 			children = (
+				01F9C11A1A996F5400D4EAB4 /* konashiInterface.h */,
 				01F3EC071A8100EF00EF3D4B /* Konashi */,
 				0174C969192D74F90089F8C9 /* icon */,
 				0117C4F8192C31C0005E27D9 /* Fire_Alarm.mp3 */,
@@ -298,7 +299,6 @@
 			isa = PBXGroup;
 			children = (
 				01024F2718E4EF4B00F2B416 /* AppDelegate.h */,
-				01F3EC3F1A81015100EF3D4B /* konashiInterface.h */,
 				01024F2818E4EF4B00F2B416 /* AppDelegate.m */,
 				01024F2A18E4EF4B00F2B416 /* Main.storyboard */,
 				01024F2D18E4EF4B00F2B416 /* FirstViewController.h */,
