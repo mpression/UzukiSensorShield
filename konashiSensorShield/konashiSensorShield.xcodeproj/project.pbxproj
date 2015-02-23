@@ -67,6 +67,7 @@
 		01894EF718EE94FC00E72836 /* lgi01b201309250600.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01894EF418EE94FC00E72836 /* lgi01b201309250600.jpg */; };
 		01894EF818EE94FC00E72836 /* lgi01a201309250600.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01894EF518EE94FC00E72836 /* lgi01a201309250600.jpg */; };
 		01894EF918EE94FC00E72836 /* lgi01c201309250600.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01894EF618EE94FC00E72836 /* lgi01c201309250600.jpg */; };
+		018D5ED01A9B211A002A1EC8 /* mpression4MAKERS_Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 018D5ECF1A9B211A002A1EC8 /* mpression4MAKERS_Small.png */; };
 		01B591FD1A99B86200D7F077 /* mpression4MAKERS_Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 01B591FC1A99B86200D7F077 /* mpression4MAKERS_Small.png */; };
 		01D9BE3F192B995000E96860 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01D9BE3E192B995000E96860 /* AudioToolbox.framework */; };
 		01F1287C18F62242005AAFD1 /* alert-146730_640.png in Resources */ = {isa = PBXBuildFile; fileRef = 01F1287B18F62242005AAFD1 /* alert-146730_640.png */; };
@@ -167,6 +168,7 @@
 		01894EF418EE94FC00E72836 /* lgi01b201309250600.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lgi01b201309250600.jpg; sourceTree = "<group>"; };
 		01894EF518EE94FC00E72836 /* lgi01a201309250600.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lgi01a201309250600.jpg; sourceTree = "<group>"; };
 		01894EF618EE94FC00E72836 /* lgi01c201309250600.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lgi01c201309250600.jpg; sourceTree = "<group>"; };
+		018D5ECF1A9B211A002A1EC8 /* mpression4MAKERS_Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mpression4MAKERS_Small.png; sourceTree = "<group>"; };
 		01B591FC1A99B86200D7F077 /* mpression4MAKERS_Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mpression4MAKERS_Small.png; path = "../../../Dropbox/Makers/全マニュアル他ドキュメント/mpression/mpression4MAKERS_Small.png"; sourceTree = "<group>"; };
 		01B591FE1A99D28400D7F077 /* konashiInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = konashiInterface.h; sourceTree = SOURCE_ROOT; };
 		01D9BE3E192B995000E96860 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -254,6 +256,7 @@
 				01894E5018EA949300E72836 /* SiLabsLogo.png */,
 				01894E4E18E7724700E72836 /* header_logo.png */,
 				01B591FC1A99B86200D7F077 /* mpression4MAKERS_Small.png */,
+				018D5ECF1A9B211A002A1EC8 /* mpression4MAKERS_Small.png */,
 				01024F6E18E66BB700F2B416 /* Mpression-small.png */,
 				01894EF218EE8B4300E72836 /* weather_ca_003.png */,
 				017FC1B518EECB47008A616B /* weather_ca_005.png */,
@@ -570,6 +573,7 @@
 				01894EE518EE854A00E72836 /* weather_ca_007.png in Resources */,
 				01B591FD1A99B86200D7F077 /* mpression4MAKERS_Small.png in Resources */,
 				0174C9A0192D74F90089F8C9 /* iTunesArtwork.png in Resources */,
+				018D5ED01A9B211A002A1EC8 /* mpression4MAKERS_Small.png in Resources */,
 				0174C998192D74F90089F8C9 /* Icon-72.png in Resources */,
 				0174C9A3192D74F90089F8C9 /* Icon-40@2x.png in Resources */,
 				0174C9AF192D74F90089F8C9 /* Icon@2x.png in Resources */,
