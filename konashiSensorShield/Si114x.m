@@ -12,7 +12,7 @@
 
 @implementation Si114x : NSObject
 
-- (void) initialize{
++ (void) setup{
     
     //***********************************************************
     // Si114x Ambient Light / UV Index / Proximity Sensor Setting

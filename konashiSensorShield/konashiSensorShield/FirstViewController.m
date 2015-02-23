@@ -130,9 +130,9 @@ double dcindex;
 {
     NSLog(@"Start check sensor.");
 
-    [Si114x initialize];
-    [Adxl345 initialize];
-    [Si7013 initialize];
+    [Si114x setup];
+    [Adxl345 setup];
+    //[Si7013 initialize];
 
     //Sensor Event Handler
     [Konashi addObserver:self selector:@selector(readSensor) name:KONASHI_EVENT_I2C_READ_COMPLETE];
@@ -157,7 +157,6 @@ double dcindex;
 //***********************************************************
 - (void)checkSensor:(NSTimer *)timer
 {
-    unsigned char data[2];
     
     switch (count){
             

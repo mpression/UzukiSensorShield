@@ -12,7 +12,7 @@
 
 @implementation Adxl345 : NSObject
 
-- (void) initialize{
++ (void) setup{
     
     unsigned char data[2];
     

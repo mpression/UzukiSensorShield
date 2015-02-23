@@ -132,7 +132,7 @@
     unsigned char fifoStatus;
 }
 
-- (void) initialize;
++ (void) setup;
 + (void) chkThreshold;
 + (void) chkAcceleration;
 

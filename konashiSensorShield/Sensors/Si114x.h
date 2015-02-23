@@ -511,7 +511,7 @@
 
 }
 
-- (void) initialize;
++ (void) setup;
 + (void) chkAmbientLight;
 
 @end
