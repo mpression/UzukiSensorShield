@@ -1,5 +1,5 @@
-# Uzuki2.0 サンプルコード
-Uzuki2.0 サンプルコードは、Konashi2.0のアップデートに対応した、Uzuki-IoT Sensor Shield for Konashi & Arduino用のObjective-Cサンプルコードです。
+# UzukiSensorShield サンプルコード
+UzukiSensorShield サンプルコードは、Konashi2.0のアップデートに対応した、Uzuki-IoT Sensor Shield for Konashi & Arduino用のObjective-Cサンプルコードです。
 このサンプルコードで、以下の３つのセンサのデータを取得、表示します。
 
   ・Si1145 : 照度
