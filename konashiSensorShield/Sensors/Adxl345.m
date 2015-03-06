@@ -81,6 +81,7 @@
     //read Acceleration 3-Axis
     [Konashi i2cReadRequest:6 address:ACC_SENSOR_ADDRESS];
     [NSThread sleepForTimeInterval:I2C_WAIT_INTERVAL];
+
     
 }
 

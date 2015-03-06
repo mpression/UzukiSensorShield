@@ -24,6 +24,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import <AudioToolbox/AudioServices.h>
 #import "si114x_defs.h"
+#import "Si114x.h"
 #import "Bluetooth.h"
 
 #define CHECK_SENSOR_INTERVAL   0.1f
@@ -39,8 +40,10 @@
 @property (weak, nonatomic) IBOutlet UILabel *tempUnit;
 @property (weak, nonatomic) IBOutlet UILabel *rhUnit;
 @property (weak, nonatomic) IBOutlet UIImageView *weatherImage;
-@property (weak, nonatomic) IBOutlet UILabel *ambientLight;
+//@property (weak, nonatomic) IBOutlet UILabel *ambientLight;
 @property (weak, nonatomic) IBOutlet UIButton *stopAlarm;
+
+@property (weak, nonatomic) IBOutlet UILabel *proximity;
 
 
 @property (weak, nonatomic) IBOutlet UILabel *rhLabel;
