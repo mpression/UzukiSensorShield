@@ -2,7 +2,9 @@
 UzukiSensorShield サンプルコードは、Konashi2.0のアップデートに対応した、Uzuki-IoT Sensor Shield for Konashi & Arduino用のObjective-Cサンプルコードです。
 このサンプルコードで、以下の３つのセンサのデータを取得、表示します。
 
-  ・Si1145 : 照度
+Si1145近接センサのメソッドを追加しました。
+
+  ・Si1145 : 近接・照度
   ・Si7013 : 温度・湿度
   ・ADXL345 : ３軸加速度
   
