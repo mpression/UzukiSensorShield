@@ -16,7 +16,7 @@
 
 #define PROX_LIGHT_UV_SENSOR_ADDRESS    0x60 //Si1045
 
-/*
+
 //-----------------------------------------------------------------------------
 // Si114x_defs.h
 //-----------------------------------------------------------------------------
@@ -84,6 +84,9 @@
 #define REG_COEF2                 0x15  // add KO 2014/3/29
 #define REG_COEF3                 0x16  // add KO 2014/3/29
 
+// Parameter Read/Write Command
+#define PARAM_QUERY               0x80  // Command for Parameter Read
+#define PARAM_SET                 0xA0  // Command for Parameter Write
 
 // Parameter Offsets
 #define PARAM_I2C_ADDR            0x00
@@ -381,7 +384,7 @@
 
 // Hardware Key value
 // REG_HW_KEY
-#define HW_KEY_VAL0               0x17
+#define REG_HW_KEY_VALUE                0x17
 
 // Sleep Control
 // PARAM_SLEEP_CTRL
@@ -426,16 +429,11 @@
 #define VIS_SCALING_HIGH_SENSITIVITY                 4
 #define VIS_SCALING_LOWLIGHT                         1
 
-*/
-
 /**************************
  Define : Si114x Registers
 **************************/
 
-#define I2C_GLOBAL_ADDRESS              0x00
-#define I2C_GLOBAL_RESET_CMD            0x06
 
-#define REG_HW_KEY                      0x07
 #define REG_HW_KEY_VALUE                0x17
 
 #define REG_COEF0_VALUE                 0x00
@@ -443,35 +441,7 @@
 #define REG_COEF2_VALUE                 0x89
 #define REG_COEF3_VALUE                 0x29
 
-#define I2C_GLOBAL_ADDRESS              0x00
-#define I2C_GLOBAL_RESET_CMD            0x06
-
-#define REG_HW_KEY                      0x07
-#define REG_HW_KEY_VALUE                0x17
 //Write 0x17 value to this Register first after entering the stand-by mode followed by the init mode followed by the off mode.
-
-
-#define MEAS_RATE0                      0x08
-#define MEAS_RATE1                      0x09
-
-#define MEAS_RATE0_VALUE                0x00
-#define MEAS_RATE1_VALUE                0x02
-
-#define REG_PARAM_WR                    0x17
-#define REG_COMMAND                     0x18
-#define REG_PARAM_RD                    0x2E
-
-#define REG_COEF0                       0x13
-#define REG_COEF1                       0x14
-#define REG_COEF2                       0x15
-#define REG_COEF3                       0x16
-
-#define REG_COEF0_VALUE                 0x00
-#define REG_COEF1_VALUE                 0x02
-#define REG_COEF2_VALUE                 0x89
-#define REG_COEF3_VALUE                 0x29
-
-#define PARAM_CH_LIST                   0x01
 
 #define EN_UV                           0x80
 #define EN_AUX                          0x40
@@ -498,9 +468,6 @@
 #define ALS_AUTO                        0x0E
 #define PSALS_AUTO                      0x0F
 
-
-
-
 /******************
  Si114x interface
  ******************/
@@ -513,6 +480,8 @@
 
 + (void) setup;
 + (void) chkAmbientLight;
++ (void) setLed1Current;
++ (void) chkProximity;
 
 @end
 

@@ -115,6 +115,18 @@
                                 <color key="textColor" red="1" green="0.88315544610661501" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jN3-58-srH">
+                                <rect key="frame" x="221" y="95" width="137" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Prox:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDV-Pk-73f">
+                                <rect key="frame" x="172" y="94" width="41" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -127,6 +139,7 @@
                         <outlet property="dciLabel" destination="Fzu-PO-1YR" id="pBo-If-UiO"/>
                         <outlet property="dciTitle" destination="jwt-iZ-mXm" id="hPh-T5-UAC"/>
                         <outlet property="devicePairingButton" destination="bZw-mz-0Kb" id="v27-bd-edb"/>
+                        <outlet property="proximity" destination="jN3-58-srH" id="ZoH-5z-6PG"/>
                         <outlet property="rhLabel" destination="j1l-MB-PRW" id="aLx-Lw-tIF"/>
                         <outlet property="rhUnit" destination="TZe-FP-BeA" id="9fY-cG-Prx"/>
                         <outlet property="stopAlarm" destination="a2m-PC-lbg" id="9AM-VZ-fNi"/>

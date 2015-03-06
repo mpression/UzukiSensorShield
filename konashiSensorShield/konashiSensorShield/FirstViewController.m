@@ -117,6 +117,7 @@ double dcindex;
     [NSThread sleepForTimeInterval:0.2];
     [Konashi digitalWrite:PIO4 value:LOW];
     
+    
     [self startCheckSensor];
 }
 
@@ -133,6 +134,9 @@ double dcindex;
     [Si114x setup];
     [Adxl345 setup];
     //[Si7013 initialize];
+    
+    [Si114x setLed1Current];
+    NSLog(@"LED on");
 
     //Sensor Event Handler
     [Konashi addObserver:self selector:@selector(readSensor) name:KONASHI_EVENT_I2C_READ_COMPLETE];
@@ -174,7 +178,11 @@ double dcindex;
             
         case 3:
             [Adxl345 chkAcceleration];
-            
+            break;
+       
+        case 4:
+            [Si114x chkProximity];
+            break;
     }
 }
 
@@ -272,13 +280,13 @@ double dcindex;
             
             int uvi = (int) ( (double) ((unsigned short)(data[1] << 8 | data[0])) / 100.0);
             
-            _ambientLight.text = [NSString stringWithFormat:@"%d", uvi];
+            //_ambientLight.text = [NSString stringWithFormat:@"%d", uvi];
             
             NSLog(@"UVI: %d", uvi);
             NSLog(@" ");
             
             //_silabsLogo.hidden = NO;
-            _ambientLight.hidden = NO;
+            //_ambientLight.hidden = NO;
             
             [Konashi i2cStopCondition];
             
@@ -297,12 +305,13 @@ double dcindex;
             else{ // 快晴
                 NSString *imagePath = [[NSBundle mainBundle] pathForResource:@"weather_ca_003" ofType:@"png"];
                 _weatherImage.image = [UIImage imageWithContentsOfFile:imagePath];
+                
             }
 
             count++;
             break;
             
-        case 3:
+        case 3: // Read Acceleration
             /*
             [Konashi i2cRead:1 data:data];
             
@@ -336,6 +345,23 @@ double dcindex;
             _az.text = [NSString stringWithFormat:@"%f", az];
 
             float value = sqrt(ax * ax + ay * ay + az * az);
+            
+            //count = 0;
+            count++;
+            break;
+          
+        case 4: // Proximity Sense
+            
+            [Konashi i2cRead:2 data:data];
+            
+            double prox =  log((double)((unsigned short)(data[1] << 8 | data[0])));
+            
+            _proximity.text = [NSString stringWithFormat:@"%f", prox];
+            
+            
+
+            
+            [Konashi i2cStopCondition];
 
             count=0;
 
