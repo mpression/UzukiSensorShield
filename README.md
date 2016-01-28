@@ -8,6 +8,7 @@ git clone https://github.com/mpression/UzukiSensorShield
 cd UzukiSensorShield/konashiSensorShield
 pod install
 open konashiSensorShield.xcworkspace
+# iOSデバイスを接続、xcode上でデプロイ先として選択
 # xcode上でビルド、実行
 ```
 
