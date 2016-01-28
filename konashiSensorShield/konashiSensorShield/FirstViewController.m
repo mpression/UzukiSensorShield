@@ -57,8 +57,12 @@ double dcindex;
         [[Konashi shared] setReadyHandler:^{
             [self konashiIsReady];
         }];
-        [Konashi addObserver:self selector:@selector(konashiNotFound) name:KONASHI_EVENT_KONASHI_NOT_FOUND];
-        [Konashi addObserver:self selector:@selector(konashiFindCanceled) name:KONASHI_EVENT_CANCEL_KONASHI_FIND];
+        [[NSNotificationCenter defaultCenter] addObserverForName:KonashiEventPeripheralNotFoundNotification object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification *note) {
+            [self konashiNotFound];
+        }];
+        [[NSNotificationCenter defaultCenter] addObserverForName:KonashiEventPeripheralSelectorDismissedNotification object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification *note) {
+            [self konashiFindCanceled];
+        }];
         [Konashi find];
     }
     else
