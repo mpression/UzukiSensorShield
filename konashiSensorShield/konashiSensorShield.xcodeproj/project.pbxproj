@@ -19,8 +19,6 @@
 		01024F3B18E4EF4B00F2B416 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01024F3A18E4EF4B00F2B416 /* XCTest.framework */; };
 		01024F3C18E4EF4B00F2B416 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01024F1818E4EF4B00F2B416 /* Foundation.framework */; };
 		01024F3D18E4EF4B00F2B416 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01024F1C18E4EF4B00F2B416 /* UIKit.framework */; };
-		01024F4518E4EF4B00F2B416 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 01024F4318E4EF4B00F2B416 /* InfoPlist.strings */; };
-		01024F4718E4EF4B00F2B416 /* konashiSensorShieldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 01024F4618E4EF4B00F2B416 /* konashiSensorShieldTests.m */; };
 		01024F5118E4EF5800F2B416 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01024F5018E4EF5800F2B416 /* CoreBluetooth.framework */; };
 		01024F5318E4EF6900F2B416 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01024F5218E4EF6900F2B416 /* QuartzCore.framework */; };
 		01024F6F18E66BB700F2B416 /* Mpression-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 01024F6E18E66BB700F2B416 /* Mpression-small.png */; };
@@ -103,9 +101,6 @@
 		01024F3318E4EF4B00F2B416 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		01024F3918E4EF4B00F2B416 /* konashiSensorShieldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = konashiSensorShieldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01024F3A18E4EF4B00F2B416 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		01024F4218E4EF4B00F2B416 /* konashiSensorShieldTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "konashiSensorShieldTests-Info.plist"; sourceTree = "<group>"; };
-		01024F4418E4EF4B00F2B416 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		01024F4618E4EF4B00F2B416 /* konashiSensorShieldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = konashiSensorShieldTests.m; sourceTree = "<group>"; };
 		01024F5018E4EF5800F2B416 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		01024F5218E4EF6900F2B416 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		01024F6E18E66BB700F2B416 /* Mpression-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mpression-small.png"; sourceTree = "<group>"; };
@@ -220,7 +215,6 @@
 				01894EEB18EE8A4900E72836 /* weather_ca_015.png */,
 				01F1287B18F62242005AAFD1 /* alert-146730_640.png */,
 				01024F1E18E4EF4B00F2B416 /* konashiSensorShield */,
-				01024F4018E4EF4B00F2B416 /* konashiSensorShieldTests */,
 				01024F1718E4EF4B00F2B416 /* Frameworks */,
 				01024F1618E4EF4B00F2B416 /* Products */,
 				0C4BFB5611968A9EEB9FE95A /* Pods */,
@@ -282,24 +276,6 @@
 				01024F2118E4EF4B00F2B416 /* InfoPlist.strings */,
 				01024F2418E4EF4B00F2B416 /* main.m */,
 				01024F2618E4EF4B00F2B416 /* konashiSensorShield-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		01024F4018E4EF4B00F2B416 /* konashiSensorShieldTests */ = {
-			isa = PBXGroup;
-			children = (
-				01024F4618E4EF4B00F2B416 /* konashiSensorShieldTests.m */,
-				01024F4118E4EF4B00F2B416 /* Supporting Files */,
-			);
-			path = konashiSensorShieldTests;
-			sourceTree = "<group>";
-		};
-		01024F4118E4EF4B00F2B416 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				01024F4218E4EF4B00F2B416 /* konashiSensorShieldTests-Info.plist */,
-				01024F4318E4EF4B00F2B416 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -497,7 +473,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01024F4518E4EF4B00F2B416 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,7 +530,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01024F4718E4EF4B00F2B416 /* konashiSensorShieldTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,14 +558,6 @@
 				01024F2B18E4EF4B00F2B416 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		01024F4318E4EF4B00F2B416 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				01024F4418E4EF4B00F2B416 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
