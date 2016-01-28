@@ -29,8 +29,12 @@
 -(void)initKonashi {
     // KONASHIの初期化（接続とREADYのEVENT通知を登録する)
     [Konashi initialize];
-    [Konashi addObserver:self selector:@selector(connected) name:KONASHI_EVENT_CONNECTED];
-    [Konashi addObserver:self selector:@selector(ready) name:KONASHI_EVENT_READY];
+    [[Konashi shared] setConnectedHandler:^{
+        [self connected];
+    }];
+    [[Konashi shared] setReadyHandler:^{
+        [self ready];
+    }];
     
     _timer = [NSTimer scheduledTimerWithTimeInterval:5.0 target:self selector:@selector(timerJob) userInfo:nil repeats:YES];
 }
