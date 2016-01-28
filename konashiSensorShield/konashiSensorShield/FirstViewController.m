@@ -54,14 +54,18 @@ double dcindex;
 {
     if(![Konashi isConnected])
     {
+        [[Konashi shared] setReadyHandler:^{
+            [self konashiIsReady];
+        }];
         [Konashi addObserver:self selector:@selector(konashiNotFound) name:KONASHI_EVENT_KONASHI_NOT_FOUND];
-        [Konashi addObserver:self selector:@selector(konashiIsReady) name:KONASHI_EVENT_READY];
         [Konashi addObserver:self selector:@selector(konashiFindCanceled) name:KONASHI_EVENT_CANCEL_KONASHI_FIND];
         [Konashi find];
     }
     else
     {
-        [Konashi addObserver:self selector:@selector(konashiIsDisconnected) name:KONASHI_EVENT_DISCONNECTED];
+        [[Konashi shared] setDisconnectedHandler:^{
+            [self konashiIsDisconnected];
+        }];
         [Konashi disconnect];
         //_silabsLogo.hidden = NO;
     }
@@ -75,18 +79,14 @@ double dcindex;
 
 - (void)konashiNotFound
 {
-    [Konashi removeObserver:self];
 }
 
 - (void)konashiFindCanceled
 {
-    [Konashi removeObserver:self];
 }
 
 - (void)konashiIsDisconnected
 {
-    [Konashi removeObserver:self];
-    
     [_devicePairingButton setTitle:@"Connect" forState:UIControlStateNormal];
     //[[_devicePairingButton layer] setBackgroundColor:[[UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:1.0] CGColor]];
     
@@ -95,7 +95,6 @@ double dcindex;
 
 - (void)konashiIsReady
 {
-    [Konashi removeObserver:self];
     [_devicePairingButton setTitle:@"Disconnect" forState:UIControlStateNormal];
 
     
@@ -139,7 +138,9 @@ double dcindex;
     NSLog(@"LED on");
 
     //Sensor Event Handler
-    [Konashi addObserver:self selector:@selector(readSensor) name:KONASHI_EVENT_I2C_READ_COMPLETE];
+    [[Konashi shared] setI2cReadCompleteHandler:^(NSData *data){
+        [self readSensor];
+    }];
     checkSensorTimer = [NSTimer scheduledTimerWithTimeInterval:CHECK_SENSOR_INTERVAL
                                                         target:self
                                                       selector:@selector(checkSensor:)
@@ -152,7 +153,6 @@ double dcindex;
 //***********************************************************
 - (void)stopCheckSensor
 {
-    [Konashi removeObserver:self];
     if([checkSensorTimer isValid]) [checkSensorTimer invalidate];
 }
 
